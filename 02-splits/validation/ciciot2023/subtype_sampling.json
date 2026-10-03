@@ -1,0 +1,92 @@
+[
+  {
+    "dataset": "ciciot2023",
+    "subtype": "DDoS-ACK_Fragmentation",
+    "available_samples": 1475128,
+    "sampled_samples": 2000
+  },
+  {
+    "dataset": "ciciot2023",
+    "subtype": "DDoS-HTTP_Flood-",
+    "available_samples": 1486045,
+    "sampled_samples": 2000
+  },
+  {
+    "dataset": "ciciot2023",
+    "subtype": "DDoS-ICMP_Flood",
+    "available_samples": 1498432,
+    "sampled_samples": 2000
+  },
+  {
+    "dataset": "ciciot2023",
+    "subtype": "DDoS-ICMP_Fragmentation",
+    "available_samples": 1469900,
+    "sampled_samples": 2000
+  },
+  {
+    "dataset": "ciciot2023",
+    "subtype": "DDoS-PSHACK_Flood",
+    "available_samples": 1498383,
+    "sampled_samples": 2000
+  },
+  {
+    "dataset": "ciciot2023",
+    "subtype": "DDoS-RSTFINFlood",
+    "available_samples": 1498562,
+    "sampled_samples": 2000
+  },
+  {
+    "dataset": "ciciot2023",
+    "subtype": "DDoS-SYN_Flood",
+    "available_samples": 1497724,
+    "sampled_samples": 2000
+  },
+  {
+    "dataset": "ciciot2023",
+    "subtype": "DDoS-SlowLoris",
+    "available_samples": 1467491,
+    "sampled_samples": 2000
+  },
+  {
+    "dataset": "ciciot2023",
+    "subtype": "DDoS-SynonymousIP_Flood",
+    "available_samples": 1498886,
+    "sampled_samples": 2000
+  },
+  {
+    "dataset": "ciciot2023",
+    "subtype": "DDoS-TCP_Flood",
+    "available_samples": 1498880,
+    "sampled_samples": 2000
+  },
+  {
+    "dataset": "ciciot2023",
+    "subtype": "DDoS-UDP_Flood",
+    "available_samples": 1498560,
+    "sampled_samples": 2000
+  },
+  {
+    "dataset": "ciciot2023",
+    "subtype": "DDoS-UDP_Fragmentation",
+    "available_samples": 1479401,
+    "sampled_samples": 2000
+  },
+  {
+    "dataset": "ciciot2023",
+    "subtype": "Mirai-greeth_flood",
+    "available_samples": 1494260,
+    "sampled_samples": 2000
+  },
+  {
+    "dataset": "ciciot2023",
+    "subtype": "Mirai-greip_flood",
+    "available_samples": 1484177,
+    "sampled_samples": 2000
+  },
+  {
+    "dataset": "ciciot2023",
+    "subtype": "Mirai-udpplain",
+    "available_samples": 1491178,
+    "sampled_samples": 2000
+  }
+]

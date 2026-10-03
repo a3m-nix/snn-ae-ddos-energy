@@ -1,0 +1,18 @@
+{
+  "dataset": "ciciot2023",
+  "run_hash": {
+    "data": "0b820e9ba5546cc6",
+    "split": "1aede46ae253b7c6",
+    "validation_mode": false,
+    "cap": 50000,
+    "seeds": [
+      0,
+      1,
+      2
+    ]
+  },
+  "sample_hash": "5eb298671bca391c",
+  "splits_hash": "d03dce37dbba1ae2",
+  "finished_at": "2026-09-30 19:04:45",
+  "elapsed_seconds": 136.1
+}

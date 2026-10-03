@@ -1,0 +1,26 @@
+[
+  {
+    "dataset": "edge_iiotset",
+    "subtype": "ddos-http-flood-attacks",
+    "available_samples": 229105,
+    "sampled_samples": 50000
+  },
+  {
+    "dataset": "edge_iiotset",
+    "subtype": "ddos-icmp-flood-attacks",
+    "available_samples": 1499892,
+    "sampled_samples": 50000
+  },
+  {
+    "dataset": "edge_iiotset",
+    "subtype": "ddos-tcp-syn-flood-attacks",
+    "available_samples": 1499901,
+    "sampled_samples": 50000
+  },
+  {
+    "dataset": "edge_iiotset",
+    "subtype": "ddos-udp-flood-attacks",
+    "available_samples": 1499897,
+    "sampled_samples": 50000
+  }
+]

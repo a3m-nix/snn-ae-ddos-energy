@@ -1,0 +1,229 @@
+{
+  "job_id": "LOF",
+  "model": "LOF",
+  "study": "baseline",
+  "kind": "baseline",
+  "params": {
+    "n_neighbors": 10
+  },
+  "per_pct": {
+    "95": {
+      "threshold": 35.22378959655761,
+      "accuracy": 0.5676064599382161,
+      "precision": 0.9131029095879711,
+      "recall": 0.14669803921568628,
+      "f1": 0.2527840847659206,
+      "fpr_test": 0.01388130702643687,
+      "fpr_target": 0.05,
+      "collapsed": false,
+      "tn": 63225,
+      "fp": 890,
+      "fn": 54398,
+      "tp": 9352
+    },
+    "96": {
+      "threshold": 40.61144729614257,
+      "accuracy": 0.5639776326594456,
+      "precision": 0.9216575284690004,
+      "recall": 0.13711372549019607,
+      "f1": 0.2387142584045662,
+      "fpr_test": 0.011588551820946737,
+      "fpr_target": 0.04,
+      "collapsed": false,
+      "tn": 63372,
+      "fp": 743,
+      "fn": 55009,
+      "tp": 8741
+    },
+    "97": {
+      "threshold": 93.3999877929687,
+      "accuracy": 0.5597544284988073,
+      "precision": 0.9997319753417314,
+      "recall": 0.11701960784313725,
+      "f1": 0.2095152502387238,
+      "fpr_test": 3.119394837401544e-05,
+      "fpr_target": 0.03,
+      "collapsed": false,
+      "tn": 64113,
+      "fp": 2,
+      "fn": 56290,
+      "tp": 7460
+    },
+    "98": {
+      "threshold": 181.2633056640625,
+      "accuracy": 0.5581433543190083,
+      "precision": 1.0,
+      "recall": 0.11375686274509804,
+      "f1": 0.20427593588912987,
+      "fpr_test": 0.0,
+      "fpr_target": 0.02,
+      "collapsed": false,
+      "tn": 64115,
+      "fp": 0,
+      "fn": 56498,
+      "tp": 7252
+    },
+    "99": {
+      "threshold": 184.74563262939455,
+      "accuracy": 0.5581433543190083,
+      "precision": 1.0,
+      "recall": 0.11375686274509804,
+      "f1": 0.20427593588912987,
+      "fpr_test": 0.0,
+      "fpr_target": 0.01,
+      "collapsed": false,
+      "tn": 64115,
+      "fp": 0,
+      "fn": 56498,
+      "tp": 7252
+    },
+    "99.5": {
+      "threshold": 186.52489700317383,
+      "accuracy": 0.5581433543190083,
+      "precision": 1.0,
+      "recall": 0.11375686274509804,
+      "f1": 0.20427593588912987,
+      "fpr_test": 0.0,
+      "fpr_target": 0.005,
+      "collapsed": false,
+      "tn": 64115,
+      "fp": 0,
+      "fn": 56498,
+      "tp": 7252
+    },
+    "99.9": {
+      "threshold": 201.35020123291022,
+      "accuracy": 0.5581042505767801,
+      "precision": 1.0,
+      "recall": 0.11367843137254902,
+      "f1": 0.20414947110441287,
+      "fpr_test": 0.0,
+      "fpr_target": 0.001,
+      "collapsed": false,
+      "tn": 64115,
+      "fp": 0,
+      "fn": 56503,
+      "tp": 7247
+    }
+  },
+  "auc": 0.7167578248031646,
+  "auc_pr": 0.7110369077782934,
+  "subtype_recall": {
+    "DDoS-ACK_Fragmentation": {
+      "n": 4250,
+      "recall_op": 0.4884705882352941
+    },
+    "DDoS-HTTP_Flood-": {
+      "n": 4250,
+      "recall_op": 0.00023529411764705883
+    },
+    "DDoS-ICMP_Flood": {
+      "n": 4250,
+      "recall_op": 0.0
+    },
+    "DDoS-ICMP_Fragmentation": {
+      "n": 4250,
+      "recall_op": 0.6388235294117647
+    },
+    "DDoS-PSHACK_Flood": {
+      "n": 4250,
+      "recall_op": 0.0
+    },
+    "DDoS-RSTFINFlood": {
+      "n": 4250,
+      "recall_op": 0.0
+    },
+    "DDoS-SYN_Flood": {
+      "n": 4250,
+      "recall_op": 0.0
+    },
+    "DDoS-SlowLoris": {
+      "n": 4250,
+      "recall_op": 0.00047058823529411766
+    },
+    "DDoS-SynonymousIP_Flood": {
+      "n": 4250,
+      "recall_op": 0.0
+    },
+    "DDoS-TCP_Flood": {
+      "n": 4250,
+      "recall_op": 0.0
+    },
+    "DDoS-UDP_Flood": {
+      "n": 4250,
+      "recall_op": 0.02635294117647059
+    },
+    "DDoS-UDP_Fragmentation": {
+      "n": 4250,
+      "recall_op": 0.4964705882352941
+    },
+    "Mirai-greeth_flood": {
+      "n": 4250,
+      "recall_op": 0.026823529411764704
+    },
+    "Mirai-greip_flood": {
+      "n": 4250,
+      "recall_op": 0.028705882352941175
+    },
+    "Mirai-udpplain": {
+      "n": 4250,
+      "recall_op": 0.0
+    }
+  },
+  "cost": {
+    "n_train": 20000,
+    "n_features": 33,
+    "n_neighbors": 10
+  },
+  "latency_archival": {
+    "mean_ms": 0.6113009929656983,
+    "std_ms": 0.8369111663189497,
+    "throughput_sps": 1635.8553503218548,
+    "note": "archival; measured under parallel load"
+  },
+  "train_time_sec": 1.0162029266357422,
+  "reconstruction_error_summary": {
+    "re_val_normal_n": 115538,
+    "re_val_normal_mean": 10.448346197694898,
+    "re_val_normal_std": 30.812093773479486,
+    "re_val_normal_min": 0.897051215171814,
+    "re_val_normal_p50": 1.7759720087051392,
+    "re_val_normal_p95": 35.22378959655761,
+    "re_val_normal_p99": 184.74563262939455,
+    "re_val_normal_max": 302.23504638671875,
+    "re_test_mixed_n": 127865,
+    "re_test_mixed_mean": 427.9987374650865,
+    "re_test_mixed_std": 2856.246893687394,
+    "re_test_mixed_min": 0.9173690676689148,
+    "re_test_mixed_p50": 3.5101356506347656,
+    "re_test_mixed_p95": 1519.484619140625,
+    "re_test_mixed_p99": 11889.033203125,
+    "re_test_mixed_max": 68689.1484375,
+    "re_test_normal_n": 64115,
+    "re_test_normal_mean": 5.947639706969066,
+    "re_test_normal_std": 8.982198012761286,
+    "re_test_normal_min": 0.9173690676689148,
+    "re_test_normal_p50": 1.657971978187561,
+    "re_test_normal_p95": 26.768558120727533,
+    "re_test_normal_p99": 43.69452133178711,
+    "re_test_normal_max": 102.15504455566406,
+    "re_test_attack_n": 63750,
+    "re_test_attack_mean": 852.4662846456621,
+    "re_test_attack_std": 4000.465504993135,
+    "re_test_attack_min": 0.9198210835456848,
+    "re_test_attack_p50": 8.05551290512085,
+    "re_test_attack_p95": 3310.22900390625,
+    "re_test_attack_p99": 15026.65625,
+    "re_test_attack_max": 68689.1484375
+  },
+  "dataset": "ciciot2023",
+  "seed_idx": 0,
+  "fold": 4,
+  "n_train_normal": 462155,
+  "n_val_normal": 115538,
+  "n_test": 127865,
+  "n_test_normal": 64115,
+  "n_test_attack": 63750,
+  "wall_seconds": 21.444043397903442,
+  "finished_at": "2026-10-01 07:42:18"
+}

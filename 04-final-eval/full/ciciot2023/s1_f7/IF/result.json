@@ -1,0 +1,232 @@
+{
+  "job_id": "IF",
+  "model": "IF",
+  "study": "baseline",
+  "kind": "baseline",
+  "params": {
+    "n_estimators": 200,
+    "max_samples": 1024
+  },
+  "per_pct": {
+    "95": {
+      "threshold": 0.47152346675681195,
+      "accuracy": 0.8319308014765688,
+      "precision": 0.9274731944163463,
+      "recall": 0.7191372549019608,
+      "f1": 0.8101254638628733,
+      "fpr_test": 0.05591602458121471,
+      "fpr_target": 0.05,
+      "collapsed": false,
+      "tn": 60529,
+      "fp": 3585,
+      "fn": 17905,
+      "tp": 45845
+    },
+    "96": {
+      "threshold": 0.47507464511606395,
+      "accuracy": 0.8324078708627917,
+      "precision": 0.9347482176976969,
+      "recall": 0.713678431372549,
+      "f1": 0.809389537728045,
+      "fpr_test": 0.049536762641544746,
+      "fpr_target": 0.04,
+      "collapsed": false,
+      "tn": 60938,
+      "fp": 3176,
+      "fn": 18253,
+      "tp": 45497
+    },
+    "97": {
+      "threshold": 0.4799112253081143,
+      "accuracy": 0.8339954952136646,
+      "precision": 0.9447000752949051,
+      "recall": 0.7085176470588235,
+      "f1": 0.8097380828597551,
+      "fpr_test": 0.041239042954736876,
+      "fpr_target": 0.03,
+      "collapsed": false,
+      "tn": 61470,
+      "fp": 2644,
+      "fn": 18582,
+      "tp": 45168
+    },
+    "98": {
+      "threshold": 0.48817796823417225,
+      "accuracy": 0.8359350559969968,
+      "precision": 0.9581405312767781,
+      "recall": 0.7015843137254902,
+      "f1": 0.8100335053880287,
+      "fpr_test": 0.03047696290981689,
+      "fpr_target": 0.02,
+      "collapsed": false,
+      "tn": 62160,
+      "fp": 1954,
+      "fn": 19024,
+      "tp": 44726
+    },
+    "99": {
+      "threshold": 0.5024159916984837,
+      "accuracy": 0.830116373647,
+      "precision": 0.9739714904366654,
+      "recall": 0.677364705882353,
+      "f1": 0.7990304017171511,
+      "fpr_test": 0.017999188944692268,
+      "fpr_target": 0.01,
+      "collapsed": false,
+      "tn": 62960,
+      "fp": 1154,
+      "fn": 20568,
+      "tp": 43182
+    },
+    "99.5": {
+      "threshold": 0.5181216487468218,
+      "accuracy": 0.7944221985859976,
+      "precision": 0.9794471461479396,
+      "recall": 0.6002666666666666,
+      "f1": 0.7443493483758024,
+      "fpr_test": 0.012524565617493839,
+      "fpr_target": 0.005,
+      "collapsed": false,
+      "tn": 63311,
+      "fp": 803,
+      "fn": 25483,
+      "tp": 38267
+    },
+    "99.9": {
+      "threshold": 0.5764043070064737,
+      "accuracy": 0.6151536007007445,
+      "precision": 0.9921483687559226,
+      "recall": 0.22992941176470588,
+      "f1": 0.37333808771840454,
+      "fpr_test": 0.0018092772249430702,
+      "fpr_target": 0.001,
+      "collapsed": false,
+      "tn": 63998,
+      "fp": 116,
+      "fn": 49092,
+      "tp": 14658
+    }
+  },
+  "auc": 0.8967233892814699,
+  "auc_pr": 0.9192080768983646,
+  "subtype_recall": {
+    "DDoS-ACK_Fragmentation": {
+      "n": 4250,
+      "recall_op": 0.3058823529411765
+    },
+    "DDoS-HTTP_Flood-": {
+      "n": 4250,
+      "recall_op": 0.0051764705882352945
+    },
+    "DDoS-ICMP_Flood": {
+      "n": 4250,
+      "recall_op": 0.8282352941176471
+    },
+    "DDoS-ICMP_Fragmentation": {
+      "n": 4250,
+      "recall_op": 0.6783529411764706
+    },
+    "DDoS-PSHACK_Flood": {
+      "n": 4250,
+      "recall_op": 0.6863529411764706
+    },
+    "DDoS-RSTFINFlood": {
+      "n": 4250,
+      "recall_op": 0.9950588235294118
+    },
+    "DDoS-SYN_Flood": {
+      "n": 4250,
+      "recall_op": 0.9312941176470588
+    },
+    "DDoS-SlowLoris": {
+      "n": 4250,
+      "recall_op": 0.015529411764705882
+    },
+    "DDoS-SynonymousIP_Flood": {
+      "n": 4250,
+      "recall_op": 0.9955294117647059
+    },
+    "DDoS-TCP_Flood": {
+      "n": 4250,
+      "recall_op": 0.8425882352941176
+    },
+    "DDoS-UDP_Flood": {
+      "n": 4250,
+      "recall_op": 0.00023529411764705883
+    },
+    "DDoS-UDP_Fragmentation": {
+      "n": 4250,
+      "recall_op": 0.9691764705882353
+    },
+    "Mirai-greeth_flood": {
+      "n": 4250,
+      "recall_op": 0.964
+    },
+    "Mirai-greip_flood": {
+      "n": 4250,
+      "recall_op": 0.9607058823529412
+    },
+    "Mirai-udpplain": {
+      "n": 4250,
+      "recall_op": 0.9823529411764705
+    }
+  },
+  "cost": {
+    "n_train": 462155,
+    "n_features": 33,
+    "n_estimators": 200,
+    "max_samples": 1024,
+    "mean_tree_depth": 10.0
+  },
+  "latency_archival": {
+    "mean_ms": 0.09084477424621581,
+    "std_ms": 0.028051403530029075,
+    "throughput_sps": 11007.787825964635,
+    "note": "archival; measured under parallel load"
+  },
+  "train_time_sec": 1.90771484375,
+  "reconstruction_error_summary": {
+    "re_val_normal_n": 115539,
+    "re_val_normal_mean": 0.41786316097430354,
+    "re_val_normal_std": 0.036889822974954634,
+    "re_val_normal_min": 0.3460899543996545,
+    "re_val_normal_p50": 0.41870251308593315,
+    "re_val_normal_p95": 0.47152346675681195,
+    "re_val_normal_p99": 0.5024159916984837,
+    "re_val_normal_max": 0.6443673679354165,
+    "re_test_mixed_n": 127864,
+    "re_test_mixed_mean": 0.4645540880910234,
+    "re_test_mixed_std": 0.08025720983523554,
+    "re_test_mixed_min": 0.3461083689448887,
+    "re_test_mixed_p50": 0.44397078244208954,
+    "re_test_mixed_p95": 0.5920826271049221,
+    "re_test_mixed_p99": 0.6376955935808507,
+    "re_test_mixed_max": 0.6914716576796831,
+    "re_test_normal_n": 64114,
+    "re_test_normal_mean": 0.4079238474094331,
+    "re_test_normal_std": 0.037728089262170424,
+    "re_test_normal_min": 0.3461083689448887,
+    "re_test_normal_p50": 0.3992675424373954,
+    "re_test_normal_p95": 0.47487485415656305,
+    "re_test_normal_p99": 0.5265907093250322,
+    "re_test_normal_max": 0.6271833437787789,
+    "re_test_attack_n": 63750,
+    "re_test_attack_mean": 0.5215076763429366,
+    "re_test_attack_std": 0.0708426061567813,
+    "re_test_attack_min": 0.3465163344179004,
+    "re_test_attack_p50": 0.5474354528980864,
+    "re_test_attack_p95": 0.6119724713244056,
+    "re_test_attack_p99": 0.6456710016322488,
+    "re_test_attack_max": 0.6914716576796831
+  },
+  "dataset": "ciciot2023",
+  "seed_idx": 1,
+  "fold": 7,
+  "n_train_normal": 462155,
+  "n_val_normal": 115539,
+  "n_test": 127864,
+  "n_test_normal": 64114,
+  "n_test_attack": 63750,
+  "wall_seconds": 7.739415168762207,
+  "finished_at": "2026-10-01 12:55:22"
+}

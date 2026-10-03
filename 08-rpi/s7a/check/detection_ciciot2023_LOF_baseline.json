@@ -1,0 +1,32 @@
+{
+  "threshold": 33.071039123535144,
+  "tp": 10568,
+  "fp": 5291,
+  "fn": 53182,
+  "tn": 58823,
+  "accuracy": 0.542693799662141,
+  "precision": 0.6663724068352355,
+  "recall": 0.16577254901960783,
+  "f1": 0.2654976196158726,
+  "fpr": 0.08252487756184297,
+  "auc": 0.7383326202652505,
+  "ap": 0.7038538638068846,
+  "subtype_recall": {
+    "DDoS-ACK_Fragmentation": 0.6094117647058823,
+    "DDoS-HTTP_Flood-": 0.03058823529411765,
+    "DDoS-ICMP_Flood": 0.0,
+    "DDoS-ICMP_Fragmentation": 0.6275294117647059,
+    "DDoS-PSHACK_Flood": 0.21905882352941178,
+    "DDoS-RSTFINFlood": 0.0,
+    "DDoS-SYN_Flood": 0.0007058823529411765,
+    "DDoS-SlowLoris": 0.006823529411764706,
+    "DDoS-SynonymousIP_Flood": 0.0,
+    "DDoS-TCP_Flood": 0.10376470588235294,
+    "DDoS-UDP_Flood": 0.04188235294117647,
+    "DDoS-UDP_Fragmentation": 0.8169411764705883,
+    "Mirai-greeth_flood": 0.015058823529411765,
+    "Mirai-greip_flood": 0.014352941176470587,
+    "Mirai-udpplain": 0.00047058823529411766
+  },
+  "n": 127864
+}

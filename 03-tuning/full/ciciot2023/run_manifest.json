@@ -1,0 +1,13 @@
+{
+  "dataset": "ciciot2023",
+  "mode": "full",
+  "config_hashes": {
+    "data": "0b820e9ba5546cc6",
+    "split": "1aede46ae253b7c6",
+    "training": "1f034bd5292a8398",
+    "tuning": "cce9623aaf8f1436"
+  },
+  "script_hash": "5b70993129f3e3c8",
+  "s1_sample_hash": "5eb298671bca391c",
+  "s1_splits_hash": "d03dce37dbba1ae2"
+}

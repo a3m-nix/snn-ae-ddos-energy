@@ -1,0 +1,100 @@
+{
+  "edge_iiotset": {
+    "A1_iat_match_rate": {
+      "file": 0.999830363642118,
+      "bidir_flow": 0.8155131457175722,
+      "original_flow": 0.10113941146259345
+    },
+    "A1_iat_origin_guess": "file",
+    "A1_row_order_violation": 0,
+    "A1_time_backward": 1271,
+    "A2_files_attack_pair_in_normal_gt_1pct": [],
+    "A4_missing_ip_total": 282749,
+    "A4_frame_len_top": {
+      "1514": 137505,
+      "74": 75912,
+      "106": 21833,
+      "86": 9115,
+      "101": 5712,
+      "42": 4281,
+      "618": 2786,
+      "102": 187,
+      "97": 123,
+      "562": 93,
+      "107": 92,
+      "610": 87,
+      "127": 70,
+      "60": 70,
+      "94": 52,
+      "119": 40,
+      "78": 39,
+      "70": 38,
+      "90": 38,
+      "1405": 32
+    },
+    "A4_ip_version_counts": {
+      "6.0": 278308,
+      "0.0": 4351,
+      "6": 90
+    },
+    "A4_extra_columns_in_source": [],
+    "A5_udp_zero_port_total": 222076,
+    "A5_udp_zero_port_attack": 222076,
+    "A5_udp_zero_port_normal": 0,
+    "A6_features_separability_ge_0_99": [
+      "ip.flags.df",
+      "tcp.srcport",
+      "tcp.dstport",
+      "tcp.hdr_len"
+    ],
+    "elapsed_seconds": 28.0,
+    "estimated_full_seconds_revision_part": 224.0
+  },
+  "ciciot2023": {
+    "A1_iat_match_rate": {
+      "file": 0.9877433821726446,
+      "bidir_flow": 0.6283042016443202,
+      "original_flow": 0.6307973346574226
+    },
+    "A1_iat_origin_guess": "file",
+    "A1_row_order_violation": 0,
+    "A1_time_backward": 0,
+    "A2_files_attack_pair_in_normal_gt_1pct": [
+      "DDoS-HTTP_Flood-.parquet"
+    ],
+    "A4_missing_ip_total": 221030,
+    "A4_frame_len_top": {
+      "60": 200898,
+      "86": 3096,
+      "110": 2459,
+      "90": 1610,
+      "221": 1297,
+      "62": 1199,
+      "212": 742,
+      "104": 549,
+      "130": 547,
+      "201": 482,
+      "475": 367,
+      "78": 352,
+      "107": 294,
+      "153": 274,
+      "227": 221,
+      "228": 194,
+      "219": 193,
+      "150": 185,
+      "447": 179,
+      "226": 169
+    },
+    "A4_ip_version_counts": {
+      "0.0": 202461,
+      "6.0": 18569
+    },
+    "A4_extra_columns_in_source": [],
+    "A5_udp_zero_port_total": 0,
+    "A5_udp_zero_port_attack": 0,
+    "A5_udp_zero_port_normal": 0,
+    "A6_features_separability_ge_0_99": [],
+    "elapsed_seconds": 34.0,
+    "estimated_full_seconds_revision_part": 408.0
+  }
+}

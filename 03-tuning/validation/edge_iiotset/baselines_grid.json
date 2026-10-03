@@ -1,0 +1,65 @@
+{
+  "IF|{\"max_samples\": 256, \"n_estimators\": 100}": {
+    "model": "IF",
+    "params": {
+      "n_estimators": 100,
+      "max_samples": 256
+    },
+    "n_train": 18574,
+    "fit_seconds": 0.22754812240600586,
+    "total_seconds": 0.3325376510620117,
+    "threshold": 0.5900914619709169,
+    "accuracy": 0.8558733920108328,
+    "precision": 0.9870280287236507,
+    "recall": 0.7212254570074476,
+    "f1": 0.8334474327628362,
+    "auc": 0.9596938947407987,
+    "collapsed": false,
+    "tn": 5852,
+    "fp": 56,
+    "fn": 1647,
+    "tp": 4261
+  },
+  "OCSVM|{\"gamma\": \"scale\", \"nu\": 0.001}": {
+    "model": "OCSVM",
+    "params": {
+      "nu": 0.001,
+      "gamma": "scale"
+    },
+    "n_train": 18574,
+    "fit_seconds": 0.038565635681152344,
+    "total_seconds": 0.08041524887084961,
+    "threshold": -6.670795448210824,
+    "accuracy": 0.921039268788084,
+    "precision": 0.990341021092056,
+    "recall": 0.8503723764387271,
+    "f1": 0.9150350605591476,
+    "auc": 0.92626622199384,
+    "collapsed": false,
+    "tn": 5859,
+    "fp": 49,
+    "fn": 884,
+    "tp": 5024,
+    "n_support_vectors": 25
+  },
+  "LOF|{\"n_neighbors\": 10}": {
+    "model": "LOF",
+    "params": {
+      "n_neighbors": 10
+    },
+    "n_train": 18574,
+    "fit_seconds": 0.26680421829223633,
+    "total_seconds": 0.6148216724395752,
+    "threshold": 1.8923211574554453,
+    "accuracy": 0.995260663507109,
+    "precision": 0.9907749077490775,
+    "recall": 0.9998307379823967,
+    "f1": 0.9952822240943555,
+    "auc": 0.9997645573357035,
+    "collapsed": false,
+    "tn": 5853,
+    "fp": 55,
+    "fn": 1,
+    "tp": 5907
+  }
+}

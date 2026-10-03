@@ -1,0 +1,18 @@
+{
+  "dataset": "edge_iiotset",
+  "run_hash": {
+    "data": "0b820e9ba5546cc6",
+    "split": "1aede46ae253b7c6",
+    "validation_mode": false,
+    "cap": 50000,
+    "seeds": [
+      0,
+      1,
+      2
+    ]
+  },
+  "sample_hash": "a5b77db2711102f8",
+  "splits_hash": "ead01d33a2aecde0",
+  "finished_at": "2026-09-30 19:02:29",
+  "elapsed_seconds": 166.7
+}

@@ -1,0 +1,26 @@
+{
+  "dataset": "ciciot2023",
+  "n_units": 30,
+  "mean": {
+    "auc_latent": 0.9407,
+    "auc_input": 0.9681,
+    "sil_latent": 0.0852,
+    "sil_input": 0.0597,
+    "n_unique_normal": 389.5,
+    "auc_dense": 0.9362,
+    "sil_dense": 0.0593,
+    "pct_attack_identical": 2.98
+  },
+  "sd": {
+    "auc_latent": 0.0197,
+    "auc_input": 0.0095,
+    "sil_latent": 0.0361,
+    "sil_input": 0.0058,
+    "n_unique_normal": 114.2791,
+    "auc_dense": 0.0201,
+    "sil_dense": 0.0059,
+    "pct_attack_identical": 1.1297
+  },
+  "neurons_silent": 0,
+  "neurons_large_sig_all_folds": 0
+}

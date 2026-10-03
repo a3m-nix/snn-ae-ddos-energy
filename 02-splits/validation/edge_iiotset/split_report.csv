@@ -1,0 +1,36 @@
+dataset,partition,n,n_normal,n_attack,n_normal_groups,attack_subtypes
+edge_iiotset,holdout,2468,1268,1200,1145,"{""ddos-http-flood-attacks"": 300, ""ddos-icmp-flood-attacks"": 300, ""ddos-tcp-syn-flood-attacks"": 300, ""ddos-udp-flood-attacks"": 300}"
+edge_iiotset,eval,13532,6732,6800,6483,"{""ddos-http-flood-attacks"": 1700, ""ddos-icmp-flood-attacks"": 1700, ""ddos-tcp-syn-flood-attacks"": 1700, ""ddos-udp-flood-attacks"": 1700}"
+edge_iiotset,tune_train,718,718,0,686,{}
+edge_iiotset,tune_calib,314,314,0,231,{}
+edge_iiotset,tune_dev,472,236,236,228,"{""ddos-http-flood-attacks"": 50, ""ddos-icmp-flood-attacks"": 62, ""ddos-tcp-syn-flood-attacks"": 53, ""ddos-udp-flood-attacks"": 71}"
+edge_iiotset,s0_f0_test,1350,670,680,642,"{""ddos-http-flood-attacks"": 170, ""ddos-icmp-flood-attacks"": 170, ""ddos-tcp-syn-flood-attacks"": 170, ""ddos-udp-flood-attacks"": 170}"
+edge_iiotset,s0_f0_train,4854,4854,0,4672,{}
+edge_iiotset,s0_f0_val,1208,1208,0,1169,{}
+edge_iiotset,s0_f1_test,1351,671,680,649,"{""ddos-http-flood-attacks"": 170, ""ddos-icmp-flood-attacks"": 170, ""ddos-tcp-syn-flood-attacks"": 170, ""ddos-udp-flood-attacks"": 170}"
+edge_iiotset,s0_f1_train,4853,4853,0,4665,{}
+edge_iiotset,s0_f1_val,1208,1208,0,1169,{}
+edge_iiotset,s0_f2_test,1351,671,680,649,"{""ddos-http-flood-attacks"": 170, ""ddos-icmp-flood-attacks"": 170, ""ddos-tcp-syn-flood-attacks"": 170, ""ddos-udp-flood-attacks"": 170}"
+edge_iiotset,s0_f2_train,4852,4852,0,4668,{}
+edge_iiotset,s0_f2_val,1209,1209,0,1166,{}
+edge_iiotset,s0_f3_test,1372,692,680,647,"{""ddos-http-flood-attacks"": 170, ""ddos-icmp-flood-attacks"": 170, ""ddos-tcp-syn-flood-attacks"": 170, ""ddos-udp-flood-attacks"": 170}"
+edge_iiotset,s0_f3_train,4832,4832,0,4668,{}
+edge_iiotset,s0_f3_val,1208,1208,0,1168,{}
+edge_iiotset,s0_f4_test,1351,671,680,650,"{""ddos-http-flood-attacks"": 170, ""ddos-icmp-flood-attacks"": 170, ""ddos-tcp-syn-flood-attacks"": 170, ""ddos-udp-flood-attacks"": 170}"
+edge_iiotset,s0_f4_train,4854,4854,0,4665,{}
+edge_iiotset,s0_f4_val,1207,1207,0,1168,{}
+edge_iiotset,s0_f5_test,1352,672,680,651,"{""ddos-http-flood-attacks"": 170, ""ddos-icmp-flood-attacks"": 170, ""ddos-tcp-syn-flood-attacks"": 170, ""ddos-udp-flood-attacks"": 170}"
+edge_iiotset,s0_f5_train,4852,4852,0,4664,{}
+edge_iiotset,s0_f5_val,1208,1208,0,1168,{}
+edge_iiotset,s0_f6_test,1352,672,680,647,"{""ddos-http-flood-attacks"": 170, ""ddos-icmp-flood-attacks"": 170, ""ddos-tcp-syn-flood-attacks"": 170, ""ddos-udp-flood-attacks"": 170}"
+edge_iiotset,s0_f6_train,4852,4852,0,4667,{}
+edge_iiotset,s0_f6_val,1208,1208,0,1169,{}
+edge_iiotset,s0_f7_test,1351,671,680,649,"{""ddos-http-flood-attacks"": 170, ""ddos-icmp-flood-attacks"": 170, ""ddos-tcp-syn-flood-attacks"": 170, ""ddos-udp-flood-attacks"": 170}"
+edge_iiotset,s0_f7_train,4852,4852,0,4665,{}
+edge_iiotset,s0_f7_val,1209,1209,0,1169,{}
+edge_iiotset,s0_f8_test,1351,671,680,650,"{""ddos-http-flood-attacks"": 170, ""ddos-icmp-flood-attacks"": 170, ""ddos-tcp-syn-flood-attacks"": 170, ""ddos-udp-flood-attacks"": 170}"
+edge_iiotset,s0_f8_train,4853,4853,0,4666,{}
+edge_iiotset,s0_f8_val,1208,1208,0,1167,{}
+edge_iiotset,s0_f9_test,1351,671,680,649,"{""ddos-http-flood-attacks"": 170, ""ddos-icmp-flood-attacks"": 170, ""ddos-tcp-syn-flood-attacks"": 170, ""ddos-udp-flood-attacks"": 170}"
+edge_iiotset,s0_f9_train,4833,4833,0,4667,{}
+edge_iiotset,s0_f9_val,1228,1228,0,1167,{}

@@ -1,0 +1,9 @@
+source_file,label,label_type,packets
+Distance.parquet,Normal,Distance,249941
+Flame_Sensor.parquet,Normal,Flame_Sensor,70503
+Soil_Moisture.parquet,Normal,Soil_Moisture,249883
+Sound_Sensor.parquet,Normal,Sound_Sensor,249978
+Water_Level.parquet,Normal,Water_Level,249932
+ddos-icmp-flood-attacks.parquet,Attack,ddos-icmp-flood-attacks,249986
+ddos-udp-flood-attacks.parquet,Attack,ddos-udp-flood-attacks,249981
+phValue.parquet,Normal,phValue,9654

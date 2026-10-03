@@ -1,0 +1,34 @@
+{
+  "generated_at": "2026-10-01 18:23:03",
+  "versions": {
+    "python": "3.10.12",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.15.1",
+    "tensorflow": "2.12.0",
+    "scikit-learn": "1.5.2"
+  },
+  "constants_pj": {
+    "E_MAC": 4.6,
+    "E_AC": 0.9,
+    "E_LIF": 0.1,
+    "E_CMP": 0.9,
+    "Em_grid": [
+      2.5,
+      5.0,
+      10.0,
+      20.0
+    ],
+    "Em_main": 5.0
+  },
+  "assumptions": [
+    "BN dilipat ke bobot untuk semua model (biaya 0).",
+    "Lapisan dengan input spike dihitung AC per spike (SOP); input real dihitung MAC.",
+    "Input konstan antar-time step dihitung sekali (encoder SNN, decoder Dense_SNN).",
+    "T2: zero-skipping aktivasi ReLU untuk lapisan Dense berikutnya.",
+    "T3: baca bobot sekali per penggunaan (Dense) atau per spike (SNN); aktivasi 32-bit (Dense) vs 1-bit (spike); state membran: opt=register, pess=SRAM (2 akses/neuron/time step).",
+    "LSTM/CNN: aritmetika dari v1, tanpa kredit sparsitas; bobot dibaca sekali.",
+    "Baseline: batas bawah setara MAC; exp OCSVM dan pengurutan LOF tidak dihitung.",
+    "k dan s diukur pada seluruh sampel test tiap fold (campuran normal+serangan)."
+  ]
+}

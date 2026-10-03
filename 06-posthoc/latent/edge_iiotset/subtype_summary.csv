@@ -1,0 +1,7 @@
+,n,n,n,auc_latent,auc_latent,auc_latent,auc_input,auc_input,auc_input,pct_identical,pct_identical,pct_identical,auc_dense,auc_dense,auc_dense
+,median,<lambda_0>,<lambda_1>,median,<lambda_0>,<lambda_1>,median,<lambda_0>,<lambda_1>,median,<lambda_0>,<lambda_1>,median,<lambda_0>,<lambda_1>
+subtype,,,,,,,,,,,,,,,
+ddos-http-flood-attacks,256.0,248.5,263.75,0.9985109945842164,0.9978569175596267,0.9995531512605043,1.0,0.9999849097334511,1.0,0.0,0.0,0.0,0.9998582018173123,0.9978131871370884,0.9999837535511363
+ddos-icmp-flood-attacks,250.5,239.25,258.25,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,1.0,1.0,1.0
+ddos-tcp-syn-flood-attacks,250.0,244.25,261.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,1.0,1.0,1.0
+ddos-udp-flood-attacks,241.5,236.0,244.75,1.0,0.9999495187277674,1.0,1.0,1.0,1.0,0.0,0.0,0.0,1.0,1.0,1.0

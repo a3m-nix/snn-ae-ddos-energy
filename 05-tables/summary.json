@@ -1,0 +1,161 @@
+{
+  "generated_at": "2026-10-01 17:45:39",
+  "versions": {
+    "python": "3.10.12",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.15.1",
+    "scikit-learn": "1.5.2",
+    "tensorflow": "2.12.0",
+    "optuna": "4.8.0",
+    "pyarrow": "18.0.0",
+    "joblib": "1.4.2",
+    "brian2": "2.9.0"
+  },
+  "config_issues": [],
+  "integrity": {
+    "edge_iiotset": {
+      "dataset": "edge_iiotset",
+      "issues": [],
+      "n_results_missing": 0,
+      "n_nonfinite_scores": 0,
+      "n_length_mismatch": 0,
+      "max_abs_f1_diff_result_vs_errors": {
+        "SNN_AE": 0.0,
+        "LSTM_AE": 0.0,
+        "CNN_AE": 0.0,
+        "SNN_Dense": 0.0,
+        "Dense_SNN": 0.0,
+        "Dense_AE": 0.0,
+        "SNN_AE_T2": 0.0,
+        "SNN_AE_T5": 0.0,
+        "SNN_AE_T7": 0.0,
+        "SNN_AE_noBN": 0.0,
+        "IF": 0.0,
+        "OCSVM": 0.0,
+        "LOF": 0.0
+      },
+      "n_units": 30,
+      "n_jobs": 13
+    },
+    "ciciot2023": {
+      "dataset": "ciciot2023",
+      "issues": [],
+      "n_results_missing": 0,
+      "n_nonfinite_scores": 0,
+      "n_length_mismatch": 0,
+      "max_abs_f1_diff_result_vs_errors": {
+        "SNN_AE": 0.0,
+        "LSTM_AE": 0.0,
+        "CNN_AE": 0.0,
+        "SNN_Dense": 0.0,
+        "Dense_SNN": 0.0,
+        "Dense_AE": 0.0,
+        "SNN_AE_T2": 0.0,
+        "SNN_AE_T5": 0.0,
+        "SNN_AE_T7": 0.0,
+        "SNN_AE_noBN": 0.0,
+        "IF": 0.0,
+        "OCSVM": 0.0,
+        "LOF": 0.0
+      },
+      "n_units": 30,
+      "n_jobs": 13
+    }
+  },
+  "bootstrap": 10000,
+  "key_results": {
+    "snn_vs_dense": [
+      {
+        "dataset": "Edge-IIoTset",
+        "metric": "F1",
+        "family": "benchmark_AE",
+        "model_a": "SNN_AE",
+        "model_b": "Dense_AE",
+        "mean_a": 0.9759073138739406,
+        "mean_b": 0.9913573241366331,
+        "mean_diff": -0.015450010262692408,
+        "cohen_d": -0.42428263246920916,
+        "W": 59.0,
+        "p": 0.0006096659549769169,
+        "p_holm": 0.002774130553007126,
+        "significant_0.05": true
+      },
+      {
+        "dataset": "Edge-IIoTset",
+        "metric": "AUC",
+        "family": "benchmark_AE",
+        "model_a": "SNN_AE",
+        "model_b": "Dense_AE",
+        "mean_a": 0.9985632212385868,
+        "mean_b": 0.9995106910846341,
+        "mean_diff": -0.0009474698460472294,
+        "cohen_d": -0.2789046435803688,
+        "W": 80.0,
+        "p": 0.0011314544826745987,
+        "p_holm": 0.0019035488367080688,
+        "significant_0.05": true
+      },
+      {
+        "dataset": "Edge-IIoTset",
+        "metric": "AP",
+        "family": "benchmark_AE",
+        "model_a": "SNN_AE",
+        "model_b": "Dense_AE",
+        "mean_a": 0.998300853437259,
+        "mean_b": 0.9993529787888157,
+        "mean_diff": -0.001052125351556421,
+        "cohen_d": -0.2751293185103748,
+        "W": 100.0,
+        "p": 0.005382779985666275,
+        "p_holm": 0.005382779985666275,
+        "significant_0.05": true
+      },
+      {
+        "dataset": "CICIoT2023",
+        "metric": "F1",
+        "family": "benchmark_AE",
+        "model_a": "SNN_AE",
+        "model_b": "Dense_AE",
+        "mean_a": 0.7828497158466592,
+        "mean_b": 0.8294162669329304,
+        "mean_diff": -0.04656655108627099,
+        "cohen_d": -0.7818299405183241,
+        "W": 51.0,
+        "p": 6.286613643169403e-05,
+        "p_holm": 0.0003771968185901642,
+        "significant_0.05": true
+      },
+      {
+        "dataset": "CICIoT2023",
+        "metric": "AUC",
+        "family": "benchmark_AE",
+        "model_a": "SNN_AE",
+        "model_b": "Dense_AE",
+        "mean_a": 0.907194429075825,
+        "mean_b": 0.8959144913093405,
+        "mean_diff": 0.011279937766484697,
+        "cohen_d": 0.46721715386967483,
+        "W": 138.0,
+        "p": 0.052263347432017326,
+        "p_holm": 0.15679004229605198,
+        "significant_0.05": false
+      },
+      {
+        "dataset": "CICIoT2023",
+        "metric": "AP",
+        "family": "benchmark_AE",
+        "model_a": "SNN_AE",
+        "model_b": "Dense_AE",
+        "mean_a": 0.932613536602566,
+        "mean_b": 0.9279083781535441,
+        "mean_diff": 0.00470515844902184,
+        "cohen_d": 0.2737934321774449,
+        "W": 169.0,
+        "p": 0.19807579927146435,
+        "p_holm": 0.594227397814393,
+        "significant_0.05": false
+      }
+    ]
+  }
+}

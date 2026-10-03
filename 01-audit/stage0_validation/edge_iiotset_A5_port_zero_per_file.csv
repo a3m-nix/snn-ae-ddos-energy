@@ -1,0 +1,9 @@
+source_file,tcp_packets,tcp_zero_port,tcp_zero_port_nonfrag,tcp_zero_port_len0,tcp_zero_port_attack,tcp_zero_port_normal,udp_packets,udp_zero_port,udp_zero_port_nonfrag,udp_zero_port_len0,udp_zero_port_attack,udp_zero_port_normal
+Distance.parquet,249855,0,0,0,0,0,77,0,0,0,0,0
+Flame_Sensor.parquet,70482,0,0,0,0,0,18,0,0,0,0,0
+Soil_Moisture.parquet,249649,0,0,0,0,0,198,0,0,0,0,0
+Sound_Sensor.parquet,249896,0,0,0,0,0,73,0,0,0,0,0
+Water_Level.parquet,248893,0,0,0,0,0,1030,0,0,0,0,0
+ddos-icmp-flood-attacks.parquet,0,0,0,0,0,0,0,0,0,0,0,0
+ddos-udp-flood-attacks.parquet,0,0,0,0,0,0,222076,222076,222076,0,222076,0
+phValue.parquet,9479,0,0,0,0,0,172,0,0,0,0,0

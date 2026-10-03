@@ -1,0 +1,82 @@
+{
+  "ciciot2023|SNN_AE": {
+    "model": "SNN_AE",
+    "dataset": "ciciot2023",
+    "best_f1": 0.835917278185457,
+    "best_auc": 0.9109689705477438,
+    "best_trial_number": 0,
+    "best_params": {
+      "latent_dim": 32,
+      "time_steps": 3,
+      "threshold": 0.5247240713084176,
+      "decay": 0.9179642991664454,
+      "surrogate_scale": 15.175890952605291,
+      "learning_rate": 0.00039687933304443713
+    },
+    "n_trials_used": 2,
+    "n_trials_collapsed": 0,
+    "manifest": {
+      "dataset": "ciciot2023",
+      "mode": "validation",
+      "config_hashes": {
+        "data": "0b820e9ba5546cc6",
+        "split": "1aede46ae253b7c6",
+        "training": "1f034bd5292a8398",
+        "tuning": "cce9623aaf8f1436"
+      },
+      "script_hash": "5b70993129f3e3c8",
+      "s1_sample_hash": "5eb298671bca391c",
+      "s1_splits_hash": "d03dce37dbba1ae2"
+    }
+  },
+  "ciciot2023|Dense_AE": {
+    "model": "Dense_AE",
+    "dataset": "ciciot2023",
+    "best_f1": 0.8290971884949544,
+    "best_auc": 0.922907734235064,
+    "best_trial_number": 0,
+    "best_params": {
+      "learning_rate": 0.00023688639503640813
+    },
+    "n_trials_used": 2,
+    "n_trials_collapsed": 0,
+    "manifest": {
+      "dataset": "ciciot2023",
+      "mode": "validation",
+      "config_hashes": {
+        "data": "0b820e9ba5546cc6",
+        "split": "1aede46ae253b7c6",
+        "training": "1f034bd5292a8398",
+        "tuning": "cce9623aaf8f1436"
+      },
+      "script_hash": "5b70993129f3e3c8",
+      "s1_sample_hash": "5eb298671bca391c",
+      "s1_splits_hash": "d03dce37dbba1ae2"
+    }
+  },
+  "ciciot2023|LSTM_AE": {
+    "model": "LSTM_AE",
+    "dataset": "ciciot2023",
+    "best_f1": 0.8343610917475468,
+    "best_auc": 0.9279640448044587,
+    "best_trial_number": 1,
+    "best_params": {
+      "learning_rate": 0.0008927180304353628
+    },
+    "n_trials_used": 2,
+    "n_trials_collapsed": 0,
+    "manifest": {
+      "dataset": "ciciot2023",
+      "mode": "validation",
+      "config_hashes": {
+        "data": "0b820e9ba5546cc6",
+        "split": "1aede46ae253b7c6",
+        "training": "1f034bd5292a8398",
+        "tuning": "cce9623aaf8f1436"
+      },
+      "script_hash": "5b70993129f3e3c8",
+      "s1_sample_hash": "5eb298671bca391c",
+      "s1_splits_hash": "d03dce37dbba1ae2"
+    }
+  }
+}

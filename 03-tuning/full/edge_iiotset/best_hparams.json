@@ -1,0 +1,181 @@
+{
+  "edge_iiotset|SNN_AE": {
+    "model": "SNN_AE",
+    "dataset": "edge_iiotset",
+    "best_f1": 0.9938495239700059,
+    "best_auc": 0.9981993993662243,
+    "best_trial_number": 42,
+    "best_params": {
+      "latent_dim": 32,
+      "time_steps": 3,
+      "threshold": 0.3339164133529442,
+      "decay": 0.8469092440750365,
+      "surrogate_scale": 2.7317594782844234,
+      "learning_rate": 0.0009687430966752302
+    },
+    "n_trials_used": 50,
+    "n_trials_collapsed": 0,
+    "manifest": {
+      "dataset": "edge_iiotset",
+      "mode": "full",
+      "config_hashes": {
+        "data": "0b820e9ba5546cc6",
+        "split": "1aede46ae253b7c6",
+        "training": "1f034bd5292a8398",
+        "tuning": "cce9623aaf8f1436"
+      },
+      "script_hash": "5b70993129f3e3c8",
+      "s1_sample_hash": "a5b77db2711102f8",
+      "s1_splits_hash": "ead01d33a2aecde0"
+    }
+  },
+  "edge_iiotset|Dense_AE": {
+    "model": "Dense_AE",
+    "dataset": "edge_iiotset",
+    "best_f1": 0.9937647455342097,
+    "best_auc": 0.9991469285991614,
+    "best_trial_number": 21,
+    "best_params": {
+      "learning_rate": 0.000480100526563219
+    },
+    "n_trials_used": 50,
+    "n_trials_collapsed": 0,
+    "manifest": {
+      "dataset": "edge_iiotset",
+      "mode": "full",
+      "config_hashes": {
+        "data": "0b820e9ba5546cc6",
+        "split": "1aede46ae253b7c6",
+        "training": "1f034bd5292a8398",
+        "tuning": "cce9623aaf8f1436"
+      },
+      "script_hash": "5b70993129f3e3c8",
+      "s1_sample_hash": "a5b77db2711102f8",
+      "s1_splits_hash": "ead01d33a2aecde0"
+    }
+  },
+  "edge_iiotset|LSTM_AE": {
+    "model": "LSTM_AE",
+    "dataset": "edge_iiotset",
+    "best_f1": 0.9954507160909857,
+    "best_auc": 0.9999510950805605,
+    "best_trial_number": 20,
+    "best_params": {
+      "learning_rate": 0.0009906991009903086
+    },
+    "n_trials_used": 50,
+    "n_trials_collapsed": 0,
+    "manifest": {
+      "dataset": "edge_iiotset",
+      "mode": "full",
+      "config_hashes": {
+        "data": "0b820e9ba5546cc6",
+        "split": "1aede46ae253b7c6",
+        "training": "1f034bd5292a8398",
+        "tuning": "cce9623aaf8f1436"
+      },
+      "script_hash": "5b70993129f3e3c8",
+      "s1_sample_hash": "a5b77db2711102f8",
+      "s1_splits_hash": "ead01d33a2aecde0"
+    }
+  },
+  "edge_iiotset|CNN_AE": {
+    "model": "CNN_AE",
+    "dataset": "edge_iiotset",
+    "best_f1": 0.9945281589359374,
+    "best_auc": 0.999917489063863,
+    "best_trial_number": 19,
+    "best_params": {
+      "learning_rate": 0.000989938707540257
+    },
+    "n_trials_used": 50,
+    "n_trials_collapsed": 0,
+    "manifest": {
+      "dataset": "edge_iiotset",
+      "mode": "full",
+      "config_hashes": {
+        "data": "0b820e9ba5546cc6",
+        "split": "1aede46ae253b7c6",
+        "training": "1f034bd5292a8398",
+        "tuning": "cce9623aaf8f1436"
+      },
+      "script_hash": "5b70993129f3e3c8",
+      "s1_sample_hash": "a5b77db2711102f8",
+      "s1_splits_hash": "ead01d33a2aecde0"
+    }
+  },
+  "edge_iiotset|IF": {
+    "model": "IF",
+    "dataset": "edge_iiotset",
+    "best_f1": 0.8607183798242262,
+    "best_auc": 0.9891220217563003,
+    "best_params": {
+      "n_estimators": 200,
+      "max_samples": 1024
+    },
+    "n_train": 18574,
+    "n_grid": 4,
+    "manifest": {
+      "dataset": "edge_iiotset",
+      "mode": "full",
+      "config_hashes": {
+        "data": "0b820e9ba5546cc6",
+        "split": "1aede46ae253b7c6",
+        "training": "1f034bd5292a8398",
+        "tuning": "cce9623aaf8f1436"
+      },
+      "script_hash": "5b70993129f3e3c8",
+      "s1_sample_hash": "a5b77db2711102f8",
+      "s1_splits_hash": "ead01d33a2aecde0"
+    }
+  },
+  "edge_iiotset|OCSVM": {
+    "model": "OCSVM",
+    "dataset": "edge_iiotset",
+    "best_f1": 0.9952830188679245,
+    "best_auc": 0.9999543324888187,
+    "best_params": {
+      "nu": 0.001,
+      "gamma": 0.1
+    },
+    "n_train": 18574,
+    "n_grid": 9,
+    "manifest": {
+      "dataset": "edge_iiotset",
+      "mode": "full",
+      "config_hashes": {
+        "data": "0b820e9ba5546cc6",
+        "split": "1aede46ae253b7c6",
+        "training": "1f034bd5292a8398",
+        "tuning": "cce9623aaf8f1436"
+      },
+      "script_hash": "5b70993129f3e3c8",
+      "s1_sample_hash": "a5b77db2711102f8",
+      "s1_splits_hash": "ead01d33a2aecde0"
+    }
+  },
+  "edge_iiotset|LOF": {
+    "model": "LOF",
+    "dataset": "edge_iiotset",
+    "best_f1": 0.9952822240943555,
+    "best_auc": 0.9997645573357035,
+    "best_params": {
+      "n_neighbors": 10
+    },
+    "n_train": 18574,
+    "n_grid": 3,
+    "manifest": {
+      "dataset": "edge_iiotset",
+      "mode": "full",
+      "config_hashes": {
+        "data": "0b820e9ba5546cc6",
+        "split": "1aede46ae253b7c6",
+        "training": "1f034bd5292a8398",
+        "tuning": "cce9623aaf8f1436"
+      },
+      "script_hash": "5b70993129f3e3c8",
+      "s1_sample_hash": "a5b77db2711102f8",
+      "s1_splits_hash": "ead01d33a2aecde0"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "threshold": 0.15464172035455764,
+  "tp": 16994,
+  "fp": 151,
+  "fn": 6,
+  "tn": 16596,
+  "accuracy": 0.9953477346134472,
+  "precision": 0.9911927675707203,
+  "recall": 0.9996470588235294,
+  "f1": 0.9954019622199444,
+  "fpr": 0.009016540275870306,
+  "auc": 0.9997396794509289,
+  "ap": 0.9996792917101724,
+  "subtype_recall": {
+    "ddos-http-flood-attacks": 0.9985882352941177,
+    "ddos-icmp-flood-attacks": 1.0,
+    "ddos-tcp-syn-flood-attacks": 1.0,
+    "ddos-udp-flood-attacks": 1.0
+  },
+  "n": 33747
+}

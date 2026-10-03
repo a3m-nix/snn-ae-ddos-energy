@@ -1,0 +1,5 @@
+﻿dataset,job,Input layer (MAC),Hidden synapses,Output synapses,Neuron updates (LIF),Weight reads,Activation traffic,Membrane state (pess.)
+ciciot2023,Dense_AE,4857.6,2737.5,2585.7,0.0,11066.1,970.0,0.0
+ciciot2023,SNN_AE,4857.6,894.2,726.0,19.2,14281.0,390.0,1920.0
+edge_iiotset,Dense_AE,4857.6,3023.3,3707.9,0.0,12596.5,970.0,0.0
+edge_iiotset,SNN_AE,4857.6,1182.9,1420.1,19.2,19740.8,390.0,1920.0

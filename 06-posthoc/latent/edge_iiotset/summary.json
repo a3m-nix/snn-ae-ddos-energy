@@ -1,0 +1,26 @@
+{
+  "dataset": "edge_iiotset",
+  "n_units": 30,
+  "mean": {
+    "auc_latent": 0.9984,
+    "auc_input": 0.9999,
+    "sil_latent": 0.1133,
+    "sil_input": 0.2064,
+    "n_unique_normal": 735.8333,
+    "auc_dense": 0.9942,
+    "sil_dense": 0.196,
+    "pct_attack_identical": 2.3033
+  },
+  "sd": {
+    "auc_latent": 0.002,
+    "auc_input": 0.0003,
+    "sil_latent": 0.0235,
+    "sil_input": 0.0064,
+    "n_unique_normal": 41.3455,
+    "auc_dense": 0.0086,
+    "sil_dense": 0.0465,
+    "pct_attack_identical": 6.1282
+  },
+  "neurons_silent": 0,
+  "neurons_large_sig_all_folds": 0
+}

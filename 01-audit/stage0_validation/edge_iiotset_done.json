@@ -1,0 +1,54 @@
+{
+  "dataset": "edge_iiotset",
+  "flags": {
+    "A1_iat_match_rate": {
+      "file": 0.999830363642118,
+      "bidir_flow": 0.8155131457175722,
+      "original_flow": 0.10113941146259345
+    },
+    "A1_iat_origin_guess": "file",
+    "A1_row_order_violation": 0,
+    "A1_time_backward": 1271,
+    "A2_files_attack_pair_in_normal_gt_1pct": [],
+    "A4_missing_ip_total": 282749,
+    "A4_frame_len_top": {
+      "1514": 137505,
+      "74": 75912,
+      "106": 21833,
+      "86": 9115,
+      "101": 5712,
+      "42": 4281,
+      "618": 2786,
+      "102": 187,
+      "97": 123,
+      "562": 93,
+      "107": 92,
+      "610": 87,
+      "127": 70,
+      "60": 70,
+      "94": 52,
+      "119": 40,
+      "78": 39,
+      "70": 38,
+      "90": 38,
+      "1405": 32
+    },
+    "A4_ip_version_counts": {
+      "6.0": 278308,
+      "0.0": 4351,
+      "6": 90
+    },
+    "A4_extra_columns_in_source": [],
+    "A5_udp_zero_port_total": 222076,
+    "A5_udp_zero_port_attack": 222076,
+    "A5_udp_zero_port_normal": 0,
+    "A6_features_separability_ge_0_99": [
+      "ip.flags.df",
+      "tcp.srcport",
+      "tcp.dstport",
+      "tcp.hdr_len"
+    ],
+    "elapsed_seconds": 28.0,
+    "estimated_full_seconds_revision_part": 224.0
+  }
+}

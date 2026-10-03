@@ -1,0 +1,36 @@
+dataset,partition,n,n_normal,n_attack,n_normal_groups,attack_subtypes
+ciciot2023,holdout,8829,4329,4500,1358,"{""DDoS-ACK_Fragmentation"": 300, ""DDoS-HTTP_Flood-"": 300, ""DDoS-ICMP_Flood"": 300, ""DDoS-ICMP_Fragmentation"": 300, ""DDoS-PSHACK_Flood"": 300, ""DDoS-RSTFINFlood"": 300, ""DDoS-SYN_Flood"": 300, ""DDoS-SlowLoris"": 300, ""DDoS-SynonymousIP_Flood"": 300, ""DDoS-TCP_Flood"": 300, ""DDoS-UDP_Flood"": 300, ""DDoS-UDP_Fragmentation"": 300, ""Mirai-greeth_flood"": 300, ""Mirai-greip_flood"": 300, ""Mirai-udpplain"": 300}"
+ciciot2023,eval,51171,25671,25500,7183,"{""DDoS-ACK_Fragmentation"": 1700, ""DDoS-HTTP_Flood-"": 1700, ""DDoS-ICMP_Flood"": 1700, ""DDoS-ICMP_Fragmentation"": 1700, ""DDoS-PSHACK_Flood"": 1700, ""DDoS-RSTFINFlood"": 1700, ""DDoS-SYN_Flood"": 1700, ""DDoS-SlowLoris"": 1700, ""DDoS-SynonymousIP_Flood"": 1700, ""DDoS-TCP_Flood"": 1700, ""DDoS-UDP_Flood"": 1700, ""DDoS-UDP_Fragmentation"": 1700, ""Mirai-greeth_flood"": 1700, ""Mirai-greip_flood"": 1700, ""Mirai-udpplain"": 1700}"
+ciciot2023,tune_train,2598,2598,0,920,{}
+ciciot2023,tune_calib,865,865,0,132,{}
+ciciot2023,tune_dev,1732,866,866,306,"{""DDoS-ACK_Fragmentation"": 54, ""DDoS-HTTP_Flood-"": 62, ""DDoS-ICMP_Flood"": 52, ""DDoS-ICMP_Fragmentation"": 49, ""DDoS-PSHACK_Flood"": 49, ""DDoS-RSTFINFlood"": 62, ""DDoS-SYN_Flood"": 64, ""DDoS-SlowLoris"": 58, ""DDoS-SynonymousIP_Flood"": 52, ""DDoS-TCP_Flood"": 64, ""DDoS-UDP_Flood"": 66, ""DDoS-UDP_Fragmentation"": 50, ""Mirai-greeth_flood"": 61, ""Mirai-greip_flood"": 60, ""Mirai-udpplain"": 63}"
+ciciot2023,s0_f0_test,5116,2566,2550,800,"{""DDoS-ACK_Fragmentation"": 170, ""DDoS-HTTP_Flood-"": 170, ""DDoS-ICMP_Flood"": 170, ""DDoS-ICMP_Fragmentation"": 170, ""DDoS-PSHACK_Flood"": 170, ""DDoS-RSTFINFlood"": 170, ""DDoS-SYN_Flood"": 170, ""DDoS-SlowLoris"": 170, ""DDoS-SynonymousIP_Flood"": 170, ""DDoS-TCP_Flood"": 170, ""DDoS-UDP_Flood"": 170, ""DDoS-UDP_Fragmentation"": 170, ""Mirai-greeth_flood"": 170, ""Mirai-greip_flood"": 170, ""Mirai-udpplain"": 170}"
+ciciot2023,s0_f0_train,18484,18484,0,5118,{}
+ciciot2023,s0_f0_val,4621,4621,0,1265,{}
+ciciot2023,s0_f1_test,5116,2566,2550,798,"{""DDoS-ACK_Fragmentation"": 170, ""DDoS-HTTP_Flood-"": 170, ""DDoS-ICMP_Flood"": 170, ""DDoS-ICMP_Fragmentation"": 170, ""DDoS-PSHACK_Flood"": 170, ""DDoS-RSTFINFlood"": 170, ""DDoS-SYN_Flood"": 170, ""DDoS-SlowLoris"": 170, ""DDoS-SynonymousIP_Flood"": 170, ""DDoS-TCP_Flood"": 170, ""DDoS-UDP_Flood"": 170, ""DDoS-UDP_Fragmentation"": 170, ""Mirai-greeth_flood"": 170, ""Mirai-greip_flood"": 170, ""Mirai-udpplain"": 170}"
+ciciot2023,s0_f1_train,18484,18484,0,5105,{}
+ciciot2023,s0_f1_val,4621,4621,0,1280,{}
+ciciot2023,s0_f2_test,5115,2565,2550,798,"{""DDoS-ACK_Fragmentation"": 170, ""DDoS-HTTP_Flood-"": 170, ""DDoS-ICMP_Flood"": 170, ""DDoS-ICMP_Fragmentation"": 170, ""DDoS-PSHACK_Flood"": 170, ""DDoS-RSTFINFlood"": 170, ""DDoS-SYN_Flood"": 170, ""DDoS-SlowLoris"": 170, ""DDoS-SynonymousIP_Flood"": 170, ""DDoS-TCP_Flood"": 170, ""DDoS-UDP_Flood"": 170, ""DDoS-UDP_Fragmentation"": 170, ""Mirai-greeth_flood"": 170, ""Mirai-greip_flood"": 170, ""Mirai-udpplain"": 170}"
+ciciot2023,s0_f2_train,18485,18485,0,5105,{}
+ciciot2023,s0_f2_val,4621,4621,0,1280,{}
+ciciot2023,s0_f3_test,5115,2565,2550,797,"{""DDoS-ACK_Fragmentation"": 170, ""DDoS-HTTP_Flood-"": 170, ""DDoS-ICMP_Flood"": 170, ""DDoS-ICMP_Fragmentation"": 170, ""DDoS-PSHACK_Flood"": 170, ""DDoS-RSTFINFlood"": 170, ""DDoS-SYN_Flood"": 170, ""DDoS-SlowLoris"": 170, ""DDoS-SynonymousIP_Flood"": 170, ""DDoS-TCP_Flood"": 170, ""DDoS-UDP_Flood"": 170, ""DDoS-UDP_Fragmentation"": 170, ""Mirai-greeth_flood"": 170, ""Mirai-greip_flood"": 170, ""Mirai-udpplain"": 170}"
+ciciot2023,s0_f3_train,18485,18485,0,5105,{}
+ciciot2023,s0_f3_val,4621,4621,0,1281,{}
+ciciot2023,s0_f4_test,5115,2565,2550,794,"{""DDoS-ACK_Fragmentation"": 170, ""DDoS-HTTP_Flood-"": 170, ""DDoS-ICMP_Flood"": 170, ""DDoS-ICMP_Fragmentation"": 170, ""DDoS-PSHACK_Flood"": 170, ""DDoS-RSTFINFlood"": 170, ""DDoS-SYN_Flood"": 170, ""DDoS-SlowLoris"": 170, ""DDoS-SynonymousIP_Flood"": 170, ""DDoS-TCP_Flood"": 170, ""DDoS-UDP_Flood"": 170, ""DDoS-UDP_Fragmentation"": 170, ""Mirai-greeth_flood"": 170, ""Mirai-greip_flood"": 170, ""Mirai-udpplain"": 170}"
+ciciot2023,s0_f4_train,18485,18485,0,5109,{}
+ciciot2023,s0_f4_val,4621,4621,0,1280,{}
+ciciot2023,s0_f5_test,5133,2583,2550,1,"{""DDoS-ACK_Fragmentation"": 170, ""DDoS-HTTP_Flood-"": 170, ""DDoS-ICMP_Flood"": 170, ""DDoS-ICMP_Fragmentation"": 170, ""DDoS-PSHACK_Flood"": 170, ""DDoS-RSTFINFlood"": 170, ""DDoS-SYN_Flood"": 170, ""DDoS-SlowLoris"": 170, ""DDoS-SynonymousIP_Flood"": 170, ""DDoS-TCP_Flood"": 170, ""DDoS-UDP_Flood"": 170, ""DDoS-UDP_Fragmentation"": 170, ""Mirai-greeth_flood"": 170, ""Mirai-greip_flood"": 170, ""Mirai-udpplain"": 170}"
+ciciot2023,s0_f5_train,18470,18470,0,5747,{}
+ciciot2023,s0_f5_val,4618,4618,0,1435,{}
+ciciot2023,s0_f6_test,5115,2565,2550,797,"{""DDoS-ACK_Fragmentation"": 170, ""DDoS-HTTP_Flood-"": 170, ""DDoS-ICMP_Flood"": 170, ""DDoS-ICMP_Fragmentation"": 170, ""DDoS-PSHACK_Flood"": 170, ""DDoS-RSTFINFlood"": 170, ""DDoS-SYN_Flood"": 170, ""DDoS-SlowLoris"": 170, ""DDoS-SynonymousIP_Flood"": 170, ""DDoS-TCP_Flood"": 170, ""DDoS-UDP_Flood"": 170, ""DDoS-UDP_Fragmentation"": 170, ""Mirai-greeth_flood"": 170, ""Mirai-greip_flood"": 170, ""Mirai-udpplain"": 170}"
+ciciot2023,s0_f6_train,18485,18485,0,5106,{}
+ciciot2023,s0_f6_val,4621,4621,0,1280,{}
+ciciot2023,s0_f7_test,5116,2566,2550,800,"{""DDoS-ACK_Fragmentation"": 170, ""DDoS-HTTP_Flood-"": 170, ""DDoS-ICMP_Flood"": 170, ""DDoS-ICMP_Fragmentation"": 170, ""DDoS-PSHACK_Flood"": 170, ""DDoS-RSTFINFlood"": 170, ""DDoS-SYN_Flood"": 170, ""DDoS-SlowLoris"": 170, ""DDoS-SynonymousIP_Flood"": 170, ""DDoS-TCP_Flood"": 170, ""DDoS-UDP_Flood"": 170, ""DDoS-UDP_Fragmentation"": 170, ""Mirai-greeth_flood"": 170, ""Mirai-greip_flood"": 170, ""Mirai-udpplain"": 170}"
+ciciot2023,s0_f7_train,18484,18484,0,5103,{}
+ciciot2023,s0_f7_val,4621,4621,0,1280,{}
+ciciot2023,s0_f8_test,5115,2565,2550,799,"{""DDoS-ACK_Fragmentation"": 170, ""DDoS-HTTP_Flood-"": 170, ""DDoS-ICMP_Flood"": 170, ""DDoS-ICMP_Fragmentation"": 170, ""DDoS-PSHACK_Flood"": 170, ""DDoS-RSTFINFlood"": 170, ""DDoS-SYN_Flood"": 170, ""DDoS-SlowLoris"": 170, ""DDoS-SynonymousIP_Flood"": 170, ""DDoS-TCP_Flood"": 170, ""DDoS-UDP_Flood"": 170, ""DDoS-UDP_Fragmentation"": 170, ""Mirai-greeth_flood"": 170, ""Mirai-greip_flood"": 170, ""Mirai-udpplain"": 170}"
+ciciot2023,s0_f8_train,18484,18484,0,5118,{}
+ciciot2023,s0_f8_val,4622,4622,0,1266,{}
+ciciot2023,s0_f9_test,5115,2565,2550,799,"{""DDoS-ACK_Fragmentation"": 170, ""DDoS-HTTP_Flood-"": 170, ""DDoS-ICMP_Flood"": 170, ""DDoS-ICMP_Fragmentation"": 170, ""DDoS-PSHACK_Flood"": 170, ""DDoS-RSTFINFlood"": 170, ""DDoS-SYN_Flood"": 170, ""DDoS-SlowLoris"": 170, ""DDoS-SynonymousIP_Flood"": 170, ""DDoS-TCP_Flood"": 170, ""DDoS-UDP_Flood"": 170, ""DDoS-UDP_Fragmentation"": 170, ""Mirai-greeth_flood"": 170, ""Mirai-greip_flood"": 170, ""Mirai-udpplain"": 170}"
+ciciot2023,s0_f9_train,18485,18485,0,5119,{}
+ciciot2023,s0_f9_val,4621,4621,0,1265,{}

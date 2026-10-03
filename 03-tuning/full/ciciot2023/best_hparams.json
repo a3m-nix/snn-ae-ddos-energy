@@ -1,0 +1,181 @@
+{
+  "ciciot2023|SNN_AE": {
+    "model": "SNN_AE",
+    "dataset": "ciciot2023",
+    "best_f1": 0.835917278185457,
+    "best_auc": 0.9109689705477438,
+    "best_trial_number": 0,
+    "best_params": {
+      "latent_dim": 32,
+      "time_steps": 3,
+      "threshold": 0.5247240713084176,
+      "decay": 0.9179642991664454,
+      "surrogate_scale": 15.175890952605291,
+      "learning_rate": 0.00039687933304443713
+    },
+    "n_trials_used": 50,
+    "n_trials_collapsed": 0,
+    "manifest": {
+      "dataset": "ciciot2023",
+      "mode": "full",
+      "config_hashes": {
+        "data": "0b820e9ba5546cc6",
+        "split": "1aede46ae253b7c6",
+        "training": "1f034bd5292a8398",
+        "tuning": "cce9623aaf8f1436"
+      },
+      "script_hash": "5b70993129f3e3c8",
+      "s1_sample_hash": "5eb298671bca391c",
+      "s1_splits_hash": "d03dce37dbba1ae2"
+    }
+  },
+  "ciciot2023|Dense_AE": {
+    "model": "Dense_AE",
+    "dataset": "ciciot2023",
+    "best_f1": 0.8430959554216546,
+    "best_auc": 0.9232115383256672,
+    "best_trial_number": 25,
+    "best_params": {
+      "learning_rate": 0.0009020726476160794
+    },
+    "n_trials_used": 50,
+    "n_trials_collapsed": 0,
+    "manifest": {
+      "dataset": "ciciot2023",
+      "mode": "full",
+      "config_hashes": {
+        "data": "0b820e9ba5546cc6",
+        "split": "1aede46ae253b7c6",
+        "training": "1f034bd5292a8398",
+        "tuning": "cce9623aaf8f1436"
+      },
+      "script_hash": "5b70993129f3e3c8",
+      "s1_sample_hash": "5eb298671bca391c",
+      "s1_splits_hash": "d03dce37dbba1ae2"
+    }
+  },
+  "ciciot2023|LSTM_AE": {
+    "model": "LSTM_AE",
+    "dataset": "ciciot2023",
+    "best_f1": 0.8471585640482183,
+    "best_auc": 0.9296819180868034,
+    "best_trial_number": 42,
+    "best_params": {
+      "learning_rate": 0.0009037413979774638
+    },
+    "n_trials_used": 50,
+    "n_trials_collapsed": 0,
+    "manifest": {
+      "dataset": "ciciot2023",
+      "mode": "full",
+      "config_hashes": {
+        "data": "0b820e9ba5546cc6",
+        "split": "1aede46ae253b7c6",
+        "training": "1f034bd5292a8398",
+        "tuning": "cce9623aaf8f1436"
+      },
+      "script_hash": "5b70993129f3e3c8",
+      "s1_sample_hash": "5eb298671bca391c",
+      "s1_splits_hash": "d03dce37dbba1ae2"
+    }
+  },
+  "ciciot2023|CNN_AE": {
+    "model": "CNN_AE",
+    "dataset": "ciciot2023",
+    "best_f1": 0.8418522672648614,
+    "best_auc": 0.9292009579502007,
+    "best_trial_number": 8,
+    "best_params": {
+      "learning_rate": 0.0003991305878561678
+    },
+    "n_trials_used": 50,
+    "n_trials_collapsed": 0,
+    "manifest": {
+      "dataset": "ciciot2023",
+      "mode": "full",
+      "config_hashes": {
+        "data": "0b820e9ba5546cc6",
+        "split": "1aede46ae253b7c6",
+        "training": "1f034bd5292a8398",
+        "tuning": "cce9623aaf8f1436"
+      },
+      "script_hash": "5b70993129f3e3c8",
+      "s1_sample_hash": "5eb298671bca391c",
+      "s1_splits_hash": "d03dce37dbba1ae2"
+    }
+  },
+  "ciciot2023|IF": {
+    "model": "IF",
+    "dataset": "ciciot2023",
+    "best_f1": 0.28744588744588745,
+    "best_auc": 0.8746888977936675,
+    "best_params": {
+      "n_estimators": 200,
+      "max_samples": 1024
+    },
+    "n_train": 64916,
+    "n_grid": 4,
+    "manifest": {
+      "dataset": "ciciot2023",
+      "mode": "full",
+      "config_hashes": {
+        "data": "0b820e9ba5546cc6",
+        "split": "1aede46ae253b7c6",
+        "training": "1f034bd5292a8398",
+        "tuning": "cce9623aaf8f1436"
+      },
+      "script_hash": "5b70993129f3e3c8",
+      "s1_sample_hash": "5eb298671bca391c",
+      "s1_splits_hash": "d03dce37dbba1ae2"
+    }
+  },
+  "ciciot2023|OCSVM": {
+    "model": "OCSVM",
+    "dataset": "ciciot2023",
+    "best_f1": 0.6065673945904223,
+    "best_auc": 0.8580896923856822,
+    "best_params": {
+      "nu": 0.01,
+      "gamma": "scale"
+    },
+    "n_train": 20000,
+    "n_grid": 9,
+    "manifest": {
+      "dataset": "ciciot2023",
+      "mode": "full",
+      "config_hashes": {
+        "data": "0b820e9ba5546cc6",
+        "split": "1aede46ae253b7c6",
+        "training": "1f034bd5292a8398",
+        "tuning": "cce9623aaf8f1436"
+      },
+      "script_hash": "5b70993129f3e3c8",
+      "s1_sample_hash": "5eb298671bca391c",
+      "s1_splits_hash": "d03dce37dbba1ae2"
+    }
+  },
+  "ciciot2023|LOF": {
+    "model": "LOF",
+    "dataset": "ciciot2023",
+    "best_f1": 0.31362007168458783,
+    "best_auc": 0.7793197057898666,
+    "best_params": {
+      "n_neighbors": 10
+    },
+    "n_train": 20000,
+    "n_grid": 3,
+    "manifest": {
+      "dataset": "ciciot2023",
+      "mode": "full",
+      "config_hashes": {
+        "data": "0b820e9ba5546cc6",
+        "split": "1aede46ae253b7c6",
+        "training": "1f034bd5292a8398",
+        "tuning": "cce9623aaf8f1436"
+      },
+      "script_hash": "5b70993129f3e3c8",
+      "s1_sample_hash": "5eb298671bca391c",
+      "s1_splits_hash": "d03dce37dbba1ae2"
+    }
+  }
+}

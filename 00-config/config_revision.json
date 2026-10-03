@@ -1,0 +1,329 @@
+{
+  "hashes": {
+    "data": "0b820e9ba5546cc6",
+    "split": "1aede46ae253b7c6",
+    "training": "1f034bd5292a8398",
+    "tuning": "cce9623aaf8f1436",
+    "evaluation": "899ed84660d98007",
+    "energy": "47645b35cca3216f"
+  },
+  "data": {
+    "datasets": [
+      "edge_iiotset",
+      "ciciot2023"
+    ],
+    "revision_parquet": {
+      "edge_iiotset": "/home/jupyteruser/nix-ext-backup/0-eksperimen-final/dataset-revision-33/edge_iiotset_bidir_metadata.parquet",
+      "ciciot2023": "/home/jupyteruser/nix-ext-backup/0-eksperimen-final/dataset-revision-33/ciciot2023_bidir_metadata.parquet"
+    },
+    "manifest": {
+      "edge_iiotset": "/home/jupyteruser/nix-ext-backup/0-eksperimen-final/dataset-revision-33/edge_iiotset_manifest.json",
+      "ciciot2023": "/home/jupyteruser/nix-ext-backup/0-eksperimen-final/dataset-revision-33/ciciot2023_manifest.json"
+    },
+    "fragment_pairs": {
+      "ciciot2023": "/home/jupyteruser/nix-ext-backup/0-eksperimen-final/dataset-revision-33/ciciot2023_fragment_pairs.json"
+    },
+    "features": [
+      "frame.len",
+      "ip.version",
+      "ip.hdr_len",
+      "ip.dsfield.dscp",
+      "ip.len",
+      "ip.id",
+      "ip.frag_offset",
+      "ip.flags.df",
+      "ip.flags.mf",
+      "ip.ttl",
+      "ip.proto",
+      "tcp.srcport",
+      "tcp.dstport",
+      "tcp.seq",
+      "tcp.ack",
+      "tcp.hdr_len",
+      "tcp.len",
+      "tcp.window_size",
+      "tcp.flags.fin",
+      "tcp.flags.syn",
+      "tcp.flags.reset",
+      "tcp.flags.push",
+      "tcp.flags.ack",
+      "tcp.flags.urg",
+      "tcp.flags.ns",
+      "tcp.flags.cwr",
+      "udp.srcport",
+      "udp.dstport",
+      "udp.length",
+      "icmp.type",
+      "icmp.code",
+      "data.len",
+      "inter_arrival_time"
+    ],
+    "normal_labels": [
+      "normal",
+      "benign"
+    ],
+    "attack_labels": [
+      "attack"
+    ],
+    "cap_per_subtype": 50000,
+    "expected_subtypes": {
+      "edge_iiotset": 4,
+      "ciciot2023": 15
+    },
+    "scaler_type": {
+      "edge_iiotset": "quantile",
+      "ciciot2023": "minmax"
+    },
+    "ip_scope": "IPv4 only (packets without IPv4 src/dst excluded)"
+  },
+  "split": {
+    "random_state": 42,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "n_folds": 10,
+    "holdout_frac": 0.15,
+    "holdout_normal_splits": 20,
+    "holdout_normal_take": 3,
+    "tuning_normal_splits": 5,
+    "tuning_train_folds": 3,
+    "val_ratio": 0.2,
+    "normal_policy": "size-aware stratified group k-fold (largest-first greedy), group=flow, strata=source_file",
+    "attack_policy": "stratified by subtype at packet level (never used for fitting)",
+    "cv_split_seed": "random_state + seed_value",
+    "val_split_seed": "random_state + 1000*seed_idx + fold"
+  },
+  "created_at": "2026-09-30 18:54:32",
+  "training": {
+    "epochs": 50,
+    "batch_size": 512,
+    "patience": 8,
+    "grad_clip": 1.0,
+    "latent_dim": 32,
+    "lstm_timesteps": 1,
+    "snn_base_config": {
+      "latent_dim": 32,
+      "time_steps": 3,
+      "threshold": 0.5,
+      "decay": 0.7,
+      "surrogate_scale": 10.0,
+      "learning_rate": 0.0001
+    },
+    "predict_batch_size": 4096,
+    "quantile_scaler": {
+      "n_quantiles": 1000,
+      "output_distribution": "normal",
+      "subsample": 200000
+    }
+  },
+  "tuning": {
+    "models_ae": [
+      "SNN_AE",
+      "Dense_AE",
+      "LSTM_AE",
+      "CNN_AE"
+    ],
+    "n_trials_snn": 50,
+    "n_trials_ann": 50,
+    "threshold_percentile": 99,
+    "snn_search_space": {
+      "threshold": [
+        0.3,
+        0.9
+      ],
+      "decay": [
+        0.3,
+        0.95
+      ],
+      "surrogate_scale": [
+        2.0,
+        20.0
+      ],
+      "learning_rate": [
+        0.0001,
+        0.001
+      ]
+    },
+    "ann_lr_range": [
+      0.0001,
+      0.001
+    ],
+    "sampler": "TPESampler(seed=42)",
+    "pruner": "MedianPruner(n_startup_trials=8, n_warmup_steps=5)",
+    "trial_seed": "random_state + trial.number",
+    "objective": "F1 at p99 of tune_calib RE, evaluated on tune_dev; no fallback",
+    "baseline_grid": {
+      "IF": {
+        "n_estimators": [
+          100,
+          200
+        ],
+        "max_samples": [
+          256,
+          1024
+        ]
+      },
+      "OCSVM": {
+        "nu": [
+          0.001,
+          0.01,
+          0.05
+        ],
+        "gamma": [
+          "scale",
+          0.01,
+          0.1
+        ]
+      },
+      "LOF": {
+        "n_neighbors": [
+          10,
+          20,
+          50
+        ]
+      }
+    },
+    "baseline_train_subsample": {
+      "IF": null,
+      "OCSVM": 20000,
+      "LOF": 20000
+    },
+    "baseline_score": "-score_samples (higher = more anomalous)",
+    "baseline_selection": "max F1 at p99, tie-break by AUC"
+  },
+  "evaluation": {
+    "ae_jobs": [
+      [
+        "SNN_AE",
+        "SNN_AE",
+        true,
+        true,
+        3,
+        true,
+        "benchmark+arch+timestep"
+      ],
+      [
+        "LSTM_AE",
+        "LSTM_AE",
+        null,
+        null,
+        null,
+        null,
+        "benchmark"
+      ],
+      [
+        "CNN_AE",
+        "CNN_AE",
+        null,
+        null,
+        null,
+        null,
+        "benchmark"
+      ],
+      [
+        "SNN_Dense",
+        "SNN_Dense",
+        true,
+        false,
+        3,
+        true,
+        "arch"
+      ],
+      [
+        "Dense_SNN",
+        "Dense_SNN",
+        false,
+        true,
+        3,
+        true,
+        "arch"
+      ],
+      [
+        "Dense_AE",
+        "Dense_AE",
+        false,
+        false,
+        3,
+        true,
+        "benchmark+arch"
+      ],
+      [
+        "SNN_AE_T2",
+        "SNN_AE",
+        true,
+        true,
+        2,
+        true,
+        "timestep"
+      ],
+      [
+        "SNN_AE_T5",
+        "SNN_AE",
+        true,
+        true,
+        5,
+        true,
+        "timestep"
+      ],
+      [
+        "SNN_AE_T7",
+        "SNN_AE",
+        true,
+        true,
+        7,
+        true,
+        "timestep"
+      ],
+      [
+        "SNN_AE_noBN",
+        "SNN_AE",
+        true,
+        true,
+        3,
+        false,
+        "ablation_bn"
+      ]
+    ],
+    "baseline_jobs": [
+      "IF",
+      "OCSVM",
+      "LOF"
+    ],
+    "percentile_grid": [
+      95,
+      96,
+      97,
+      98,
+      99,
+      99.5,
+      99.9
+    ],
+    "operating_percentile": 99,
+    "threshold_source": "validation-normal only; no fallback",
+    "model_seed": "random_state + 1000*seed_idx + fold",
+    "spike_subset_n": 1000,
+    "spike_neuron_n": 2000,
+    "latent_n_per_class": 1000,
+    "latency": {
+      "batch": 100,
+      "repeats": 50,
+      "note": "archival only; manuscript latency from S5"
+    },
+    "brian2": {
+      "enabled": true,
+      "sample_size": 256,
+      "record_neurons": 8,
+      "run_for": [
+        "SNN_AE"
+      ]
+    }
+  },
+  "energy": {
+    "E_AC": 0.9,
+    "E_MAC": 4.6,
+    "E_LIF": 0.1,
+    "model": "Horowitz 45 nm, arithmetic only (as v8.3); BN cost 0 when BN removed"
+  }
+}

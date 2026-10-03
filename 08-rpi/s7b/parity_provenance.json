@@ -1,0 +1,6 @@
+{
+  "tshark_binary": "/opt/tshark-3.6.2/bin/tshark",
+  "tshark_version": "TShark (Wireshark) 3.6.2 (Git commit 626020d9b3c3)",
+  "field_aliases_used": {},
+  "disabled_protocols_used": []
+}

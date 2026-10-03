@@ -1,0 +1,32 @@
+{
+  "threshold": 0.0037765147909521925,
+  "tp": 48182,
+  "fp": 928,
+  "fn": 15568,
+  "tn": 63186,
+  "accuracy": 0.8709879246699619,
+  "precision": 0.9811036448788434,
+  "recall": 0.7557960784313725,
+  "f1": 0.8538366117313486,
+  "fpr": 0.014474217799544562,
+  "auc": 0.9163514872711415,
+  "ap": 0.9402949616753099,
+  "subtype_recall": {
+    "DDoS-ACK_Fragmentation": 0.9809411764705882,
+    "DDoS-HTTP_Flood-": 0.19411764705882353,
+    "DDoS-ICMP_Flood": 0.9974117647058823,
+    "DDoS-ICMP_Fragmentation": 0.9552941176470588,
+    "DDoS-PSHACK_Flood": 0.7496470588235294,
+    "DDoS-RSTFINFlood": 0.9938823529411764,
+    "DDoS-SYN_Flood": 0.9790588235294118,
+    "DDoS-SlowLoris": 0.08282352941176471,
+    "DDoS-SynonymousIP_Flood": 0.9934117647058823,
+    "DDoS-TCP_Flood": 0.9974117647058823,
+    "DDoS-UDP_Flood": 0.0032941176470588237,
+    "DDoS-UDP_Fragmentation": 0.9774117647058823,
+    "Mirai-greeth_flood": 0.9555294117647058,
+    "Mirai-greip_flood": 0.964,
+    "Mirai-udpplain": 0.5127058823529411
+  },
+  "n": 127864
+}

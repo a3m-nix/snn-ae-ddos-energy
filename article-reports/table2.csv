@@ -1,0 +1,17 @@
+﻿Characteristic,Edge-IIoTset,CICIoT2023
+Dataset type,IIoT traffic,Smart home IoT traffic
+Selected DDoS subtypes,4,15
+Total PCAP samples,"15,042,203","23,999,993"
+Excluded non-IPv4 packets,"282,749","221,030"
+IPv4 packets,"14,759,454","23,778,963"
+TShark-extracted fields,35,35
+Preprocessing-added fields,5,5
+Final numerical features,33,33
+Feature groups,"Frame, IP, TCP, UDP, ICMP, payload, and temporal features","Frame, IP, TCP, UDP, ICMP, payload, and temporal features"
+Cap per subtype,"50,000","50,000"
+Balanced total samples (normal / attack),"400,000 (200,000 / 200,000)","1,500,000 (750,000 / 750,000)"
+Tuning holdout samples,"60,391","220,692"
+Final evaluation samples,"339,609","1,279,308"
+"Test samples/fold, mean [min–max]","33,961 [33,746–35,423]","127,931 [127,864–128,530]"
+Cross-validation,3 seeds x 10-fold; normal group-aware; folds regenerated per seed,3 seeds x 10-fold; normal group-aware; folds regenerated per seed
+Feature scaler,quantile,minmax

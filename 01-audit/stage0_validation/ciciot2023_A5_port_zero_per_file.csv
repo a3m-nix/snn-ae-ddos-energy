@@ -1,0 +1,9 @@
+source_file,tcp_packets,tcp_zero_port,tcp_zero_port_nonfrag,tcp_zero_port_len0,tcp_zero_port_attack,tcp_zero_port_normal,udp_packets,udp_zero_port,udp_zero_port_nonfrag,udp_zero_port_len0,udp_zero_port_attack,udp_zero_port_normal
+BenignTraffic.parquet,143106,0,0,0,0,0,82120,0,0,0,0,0
+DDoS-HTTP_Flood-.parquet,242146,0,0,0,0,0,4751,0,0,0,0,0
+DDoS-ICMP_Fragmentation.parquet,10154,0,0,0,0,0,8728,0,0,0,0,0
+DDoS-RSTFINFlood.parquet,249597,5,5,0,5,0,206,0,0,0,0,0
+DDoS-SynonymousIP_Flood.parquet,248916,1,1,0,1,0,762,0,0,0,0,0
+DDoS-UDP_Flood.parquet,531,0,0,0,0,0,249227,0,0,0,0,0
+Mirai-greeth_flood.parquet,986,0,0,0,0,0,749,0,0,0,0,0
+Mirai-udpplain.parquet,8919,0,0,0,0,0,235818,0,0,0,0,0

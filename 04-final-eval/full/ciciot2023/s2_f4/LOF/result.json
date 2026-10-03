@@ -1,0 +1,229 @@
+{
+  "job_id": "LOF",
+  "model": "LOF",
+  "study": "baseline",
+  "kind": "baseline",
+  "params": {
+    "n_neighbors": 10
+  },
+  "per_pct": {
+    "95": {
+      "threshold": 13.412806034088135,
+      "accuracy": 0.6428615887341477,
+      "precision": 0.9997199977599821,
+      "recall": 0.2800313725490196,
+      "f1": 0.4375114879850993,
+      "fpr_test": 7.718431614695894e-05,
+      "fpr_target": 0.05,
+      "collapsed": false,
+      "tn": 64775,
+      "fp": 5,
+      "fn": 45898,
+      "tp": 17852
+    },
+    "96": {
+      "threshold": 16.151485443115234,
+      "accuracy": 0.6129386135532561,
+      "precision": 1.0,
+      "recall": 0.21962352941176472,
+      "f1": 0.36014970868541885,
+      "fpr_test": 0.0,
+      "fpr_target": 0.04,
+      "collapsed": false,
+      "tn": 64780,
+      "fp": 0,
+      "fn": 49749,
+      "tp": 14001
+    },
+    "97": {
+      "threshold": 17.764533233642577,
+      "accuracy": 0.6040613086438964,
+      "precision": 1.0,
+      "recall": 0.20172549019607844,
+      "f1": 0.3357264064743506,
+      "fpr_test": 0.0,
+      "fpr_target": 0.03,
+      "collapsed": false,
+      "tn": 64780,
+      "fp": 0,
+      "fn": 50890,
+      "tp": 12860
+    },
+    "98": {
+      "threshold": 19.262783622741697,
+      "accuracy": 0.598047148525636,
+      "precision": 1.0,
+      "recall": 0.1896,
+      "f1": 0.3187626092804304,
+      "fpr_test": 0.0,
+      "fpr_target": 0.02,
+      "collapsed": false,
+      "tn": 64780,
+      "fp": 0,
+      "fn": 51663,
+      "tp": 12087
+    },
+    "99": {
+      "threshold": 21.085293197631827,
+      "accuracy": 0.5922819575196452,
+      "precision": 1.0,
+      "recall": 0.1779764705882353,
+      "f1": 0.30217321828060084,
+      "fpr_test": 0.0,
+      "fpr_target": 0.01,
+      "collapsed": false,
+      "tn": 64780,
+      "fp": 0,
+      "fn": 52404,
+      "tp": 11346
+    },
+    "99.5": {
+      "threshold": 23.2949058532715,
+      "accuracy": 0.5860421691433907,
+      "precision": 1.0,
+      "recall": 0.16539607843137255,
+      "f1": 0.28384526341292704,
+      "fpr_test": 0.0,
+      "fpr_target": 0.005,
+      "collapsed": false,
+      "tn": 64780,
+      "fp": 0,
+      "fn": 53206,
+      "tp": 10544
+    },
+    "99.9": {
+      "threshold": 31.042057800293016,
+      "accuracy": 0.5747296351046448,
+      "precision": 1.0,
+      "recall": 0.14258823529411765,
+      "f1": 0.24958813838550248,
+      "fpr_test": 0.0,
+      "fpr_target": 0.001,
+      "collapsed": false,
+      "tn": 64780,
+      "fp": 0,
+      "fn": 54660,
+      "tp": 9090
+    }
+  },
+  "auc": 0.92201524314573,
+  "auc_pr": 0.9438993818489085,
+  "subtype_recall": {
+    "DDoS-ACK_Fragmentation": {
+      "n": 4250,
+      "recall_op": 0.6538823529411765
+    },
+    "DDoS-HTTP_Flood-": {
+      "n": 4250,
+      "recall_op": 0.0042352941176470585
+    },
+    "DDoS-ICMP_Flood": {
+      "n": 4250,
+      "recall_op": 0.00023529411764705883
+    },
+    "DDoS-ICMP_Fragmentation": {
+      "n": 4250,
+      "recall_op": 0.6348235294117647
+    },
+    "DDoS-PSHACK_Flood": {
+      "n": 4250,
+      "recall_op": 0.26988235294117646
+    },
+    "DDoS-RSTFINFlood": {
+      "n": 4250,
+      "recall_op": 0.00023529411764705883
+    },
+    "DDoS-SYN_Flood": {
+      "n": 4250,
+      "recall_op": 0.0
+    },
+    "DDoS-SlowLoris": {
+      "n": 4250,
+      "recall_op": 0.010352941176470589
+    },
+    "DDoS-SynonymousIP_Flood": {
+      "n": 4250,
+      "recall_op": 0.0
+    },
+    "DDoS-TCP_Flood": {
+      "n": 4250,
+      "recall_op": 0.0009411764705882353
+    },
+    "DDoS-UDP_Flood": {
+      "n": 4250,
+      "recall_op": 0.15270588235294116
+    },
+    "DDoS-UDP_Fragmentation": {
+      "n": 4250,
+      "recall_op": 0.49058823529411766
+    },
+    "Mirai-greeth_flood": {
+      "n": 4250,
+      "recall_op": 0.21576470588235294
+    },
+    "Mirai-greip_flood": {
+      "n": 4250,
+      "recall_op": 0.22211764705882353
+    },
+    "Mirai-udpplain": {
+      "n": 4250,
+      "recall_op": 0.01388235294117647
+    }
+  },
+  "cost": {
+    "n_train": 20000,
+    "n_features": 33,
+    "n_neighbors": 10
+  },
+  "latency_archival": {
+    "mean_ms": 1.8467793941497803,
+    "std_ms": 0.1575926009592223,
+    "throughput_sps": 541.4831913155386,
+    "note": "archival; measured under parallel load"
+  },
+  "train_time_sec": 2.41961669921875,
+  "reconstruction_error_summary": {
+    "re_val_normal_n": 115406,
+    "re_val_normal_mean": 3.431767628554663,
+    "re_val_normal_std": 4.621431227303253,
+    "re_val_normal_min": 0.9035318493843079,
+    "re_val_normal_p50": 1.3357374668121338,
+    "re_val_normal_p95": 13.412806034088135,
+    "re_val_normal_p99": 21.085293197631827,
+    "re_val_normal_max": 109.247802734375,
+    "re_test_mixed_n": 128530,
+    "re_test_mixed_mean": 439.5473700061903,
+    "re_test_mixed_std": 3084.3149906309845,
+    "re_test_mixed_min": 0.8800532221794128,
+    "re_test_mixed_p50": 1.4893597960472107,
+    "re_test_mixed_p95": 1640.900146484375,
+    "re_test_mixed_p99": 12795.6796875,
+    "re_test_mixed_max": 72188.84375,
+    "re_test_normal_n": 64780,
+    "re_test_normal_mean": 1.2809342350551987,
+    "re_test_normal_std": 0.7899910627202474,
+    "re_test_normal_min": 0.9633848071098328,
+    "re_test_normal_p50": 1.1282129287719727,
+    "re_test_normal_p95": 1.777060568332672,
+    "re_test_normal_p99": 2.928914608955382,
+    "re_test_normal_max": 15.168752670288086,
+    "re_test_attack_n": 63750,
+    "re_test_attack_mean": 884.8948164258629,
+    "re_test_attack_std": 4334.319760371131,
+    "re_test_attack_min": 0.8800532221794128,
+    "re_test_attack_p50": 7.165608167648315,
+    "re_test_attack_p95": 4783.6904296875,
+    "re_test_attack_p99": 14950.115234375,
+    "re_test_attack_max": 72188.84375
+  },
+  "dataset": "ciciot2023",
+  "seed_idx": 2,
+  "fold": 4,
+  "n_train_normal": 461622,
+  "n_val_normal": 115406,
+  "n_test": 128530,
+  "n_test_normal": 64780,
+  "n_test_attack": 63750,
+  "wall_seconds": 36.3034930229187,
+  "finished_at": "2026-10-01 15:34:24"
+}

@@ -1,0 +1,4 @@
+﻿group,parameter,Edge-IIoTset,CICIoT2023
+leakage,attack_group_overlap_holdout_eval_share,0.16044705882352941,0.5682839215686275
+leakage,test_attack_in_train_normal_group_share_mean,3.92156862745098e-06,0.00042718954248366006
+leakage,all_assertions_passed,True,True

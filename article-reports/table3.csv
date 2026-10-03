@@ -1,0 +1,20 @@
+﻿Parameter,Edge-IIoTset,CICIoT2023
+Input dimension,33,33
+Latent dimension,32,32
+Time steps,3,3
+Firing threshold,0.3339,0.5247
+Membrane decay,0.8469,0.9180
+Surrogate gradient scale,2.7318,15.1759
+Learning rate,9.69e-04,3.97e-04
+Training strategy,Normal traffic only,Normal traffic only
+Loss function,MSE,MSE
+Optimizer,Adam,Adam
+Batch size,512,512
+Maximum epochs,50,50
+Early stopping patience,8 epochs,8 epochs
+Gradient clipping,1 for SNN-AE,1 for SNN-AE
+Anomaly threshold,99th percentile of validation-normal reconstruction error,99th percentile of validation-normal reconstruction error
+Hyperparameter tuning,15% holdout-based tuning; MISSING Optuna trials per autoencoder,15% holdout-based tuning; MISSING Optuna trials per autoencoder
+Final evaluation,3 seeds x 10-fold; normal group-aware; folds regenerated per seed,3 seeds x 10-fold; normal group-aware; folds regenerated per seed
+Fold setting,"Group-aware folds (all packets of a flow in the same fold), regenerated per seed","Group-aware folds (all packets of a flow in the same fold), regenerated per seed"
+Scaling,Fitted only on training-normal samples,Fitted only on training-normal samples

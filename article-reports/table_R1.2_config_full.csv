@@ -1,0 +1,89 @@
+﻿section,parameter,value
+data,datasets,"edge_iiotset, ciciot2023"
+data,revision_parquet.edge_iiotset,/home/jupyteruser/nix-ext-backup/0-eksperimen-final/dataset-revision-33/edge_iiotset_bidir_metadata.parquet
+data,revision_parquet.ciciot2023,/home/jupyteruser/nix-ext-backup/0-eksperimen-final/dataset-revision-33/ciciot2023_bidir_metadata.parquet
+data,manifest.edge_iiotset,/home/jupyteruser/nix-ext-backup/0-eksperimen-final/dataset-revision-33/edge_iiotset_manifest.json
+data,manifest.ciciot2023,/home/jupyteruser/nix-ext-backup/0-eksperimen-final/dataset-revision-33/ciciot2023_manifest.json
+data,fragment_pairs.ciciot2023,/home/jupyteruser/nix-ext-backup/0-eksperimen-final/dataset-revision-33/ciciot2023_fragment_pairs.json
+data,features,"frame.len, ip.version, ip.hdr_len, ip.dsfield.dscp, ip.len, ip.id, ip.frag_offset, ip.flags.df, ip.flags.mf, ip.ttl, ip.proto, tcp.srcport, tcp.dstport, tcp.seq, tcp.ack, tcp.hdr_len, tcp.len, tcp.window_size, tcp.flags.fin, tcp.flags.syn, tcp.flags.reset, tcp.flags.push, tcp.flags.ack, tcp.flags.urg, tcp.flags.ns, tcp.flags.cwr, udp.srcport, udp.dstport, udp.length, icmp.type, icmp.code, data.len, inter_arrival_time"
+data,normal_labels,"normal, benign"
+data,attack_labels,attack
+data,cap_per_subtype,"50,000"
+data,expected_subtypes.edge_iiotset,4
+data,expected_subtypes.ciciot2023,15
+data,scaler_type.edge_iiotset,quantile
+data,scaler_type.ciciot2023,minmax
+data,ip_scope,IPv4 only (packets without IPv4 src/dst excluded)
+split,random_state,42
+split,seeds,"0, 1, 2"
+split,n_folds,10
+split,holdout_frac,0.15
+split,holdout_normal_splits,20
+split,holdout_normal_take,3
+split,tuning_normal_splits,5
+split,tuning_train_folds,3
+split,val_ratio,0.2
+split,normal_policy,"size-aware stratified group k-fold (largest-first greedy), group=flow, strata=source_file"
+split,attack_policy,stratified by subtype at packet level (never used for fitting)
+split,cv_split_seed,random_state + seed_value
+split,val_split_seed,random_state + 1000*seed_idx + fold
+created_at,created_at,2026-09-30 18:54:32
+training,epochs,50
+training,batch_size,512
+training,patience,8
+training,grad_clip,1
+training,latent_dim,32
+training,lstm_timesteps,1
+training,snn_base_config.latent_dim,32
+training,snn_base_config.time_steps,3
+training,snn_base_config.threshold,0.5
+training,snn_base_config.decay,0.7
+training,snn_base_config.surrogate_scale,10
+training,snn_base_config.learning_rate,0.0001
+training,predict_batch_size,"4,096"
+training,quantile_scaler.n_quantiles,"1,000"
+training,quantile_scaler.output_distribution,normal
+training,quantile_scaler.subsample,"200,000"
+tuning,models_ae,"SNN_AE, Dense_AE, LSTM_AE, CNN_AE"
+tuning,n_trials_snn,50
+tuning,n_trials_ann,50
+tuning,threshold_percentile,99
+tuning,snn_search_space.threshold,"0.3, 0.9"
+tuning,snn_search_space.decay,"0.3, 0.95"
+tuning,snn_search_space.surrogate_scale,"2.0, 20.0"
+tuning,snn_search_space.learning_rate,"0.0001, 0.001"
+tuning,ann_lr_range,"0.0001, 0.001"
+tuning,sampler,TPESampler(seed=42)
+tuning,pruner,"MedianPruner(n_startup_trials=8, n_warmup_steps=5)"
+tuning,trial_seed,random_state + trial.number
+tuning,objective,"F1 at p99 of tune_calib RE, evaluated on tune_dev; no fallback"
+tuning,baseline_grid.IF.n_estimators,"100, 200"
+tuning,baseline_grid.IF.max_samples,"256, 1024"
+tuning,baseline_grid.OCSVM.nu,"0.001, 0.01, 0.05"
+tuning,baseline_grid.OCSVM.gamma,"scale, 0.01, 0.1"
+tuning,baseline_grid.LOF.n_neighbors,"10, 20, 50"
+tuning,baseline_train_subsample.IF,None
+tuning,baseline_train_subsample.OCSVM,"20,000"
+tuning,baseline_train_subsample.LOF,"20,000"
+tuning,baseline_score,-score_samples (higher = more anomalous)
+tuning,baseline_selection,"max F1 at p99, tie-break by AUC"
+evaluation,ae_jobs,"['SNN_AE', 'SNN_AE', True, True, 3, True, 'benchmark+arch+timestep'], ['LSTM_AE', 'LSTM_AE', None, None, None, None, 'benchmark'], ['CNN_AE', 'CNN_AE', None, None, None, None, 'benchmark'], ['SNN_Dense', 'SNN_Dense', True, False, 3, True, 'arch'], ['Dense_SNN', 'Dense_SNN', False, True, 3, True, 'arch'], ['Dense_AE', 'Dense_AE', False, False, 3, True, 'benchmark+arch'], ['SNN_AE_T2', 'SNN_AE', True, True, 2, True, 'timestep'], ['SNN_AE_T5', 'SNN_AE', True, True, 5, True, 'timestep'], ['SNN_AE_T7', 'SNN_AE', True, True, 7, True, 'timestep'], ['SNN_AE_noBN', 'SNN_AE', True, True, 3, False, 'ablation_bn']"
+evaluation,baseline_jobs,"IF, OCSVM, LOF"
+evaluation,percentile_grid,"95, 96, 97, 98, 99, 99.5, 99.9"
+evaluation,operating_percentile,99
+evaluation,threshold_source,validation-normal only; no fallback
+evaluation,model_seed,random_state + 1000*seed_idx + fold
+evaluation,spike_subset_n,"1,000"
+evaluation,spike_neuron_n,"2,000"
+evaluation,latent_n_per_class,"1,000"
+evaluation,latency.batch,100
+evaluation,latency.repeats,50
+evaluation,latency.note,archival only; manuscript latency from S5
+evaluation,brian2.enabled,True
+evaluation,brian2.sample_size,256
+evaluation,brian2.record_neurons,8
+evaluation,brian2.run_for,SNN_AE
+energy,E_AC,0.9
+energy,E_MAC,4.6
+energy,E_LIF,0.1
+energy,model,"Horowitz 45 nm, arithmetic only (as v8.3); BN cost 0 when BN removed"

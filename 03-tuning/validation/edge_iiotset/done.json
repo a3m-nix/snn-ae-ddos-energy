@@ -1,0 +1,19 @@
+{
+  "dataset": "edge_iiotset",
+  "mode": "validation",
+  "manifest": {
+    "dataset": "edge_iiotset",
+    "mode": "validation",
+    "config_hashes": {
+      "data": "0b820e9ba5546cc6",
+      "split": "1aede46ae253b7c6",
+      "training": "1f034bd5292a8398",
+      "tuning": "cce9623aaf8f1436"
+    },
+    "script_hash": "5b70993129f3e3c8",
+    "s1_sample_hash": "a5b77db2711102f8",
+    "s1_splits_hash": "ead01d33a2aecde0"
+  },
+  "finished_at": "2026-09-30 20:07:00",
+  "elapsed_hours": 0.05
+}

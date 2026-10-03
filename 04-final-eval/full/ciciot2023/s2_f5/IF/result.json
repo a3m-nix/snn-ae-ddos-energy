@@ -1,0 +1,232 @@
+{
+  "job_id": "IF",
+  "model": "IF",
+  "study": "baseline",
+  "kind": "baseline",
+  "params": {
+    "n_estimators": 200,
+    "max_samples": 1024
+  },
+  "per_pct": {
+    "95": {
+      "threshold": 0.520387957856144,
+      "accuracy": 0.8125601220036758,
+      "precision": 0.9154708941663011,
+      "recall": 0.6875294117647058,
+      "f1": 0.7852938805127792,
+      "fpr_test": 0.06312095453482025,
+      "fpr_target": 0.05,
+      "collapsed": false,
+      "tn": 60068,
+      "fp": 4047,
+      "fn": 19920,
+      "tp": 43830
+    },
+    "96": {
+      "threshold": 0.5309990136657352,
+      "accuracy": 0.8090642474484808,
+      "precision": 0.9318650915638312,
+      "recall": 0.6657098039215686,
+      "f1": 0.7766167697544194,
+      "fpr_test": 0.04839741090228496,
+      "fpr_target": 0.04,
+      "collapsed": false,
+      "tn": 61012,
+      "fp": 3103,
+      "fn": 21311,
+      "tp": 42439
+    },
+    "97": {
+      "threshold": 0.5739561072871926,
+      "accuracy": 0.6091268134360458,
+      "precision": 0.9344986432763299,
+      "recall": 0.23229803921568629,
+      "f1": 0.37209945098433356,
+      "fpr_test": 0.016189659206114013,
+      "fpr_target": 0.03,
+      "collapsed": false,
+      "tn": 63077,
+      "fp": 1038,
+      "fn": 48941,
+      "tp": 14809
+    },
+    "98": {
+      "threshold": 0.5920009924635932,
+      "accuracy": 0.5518163688264967,
+      "precision": 0.9006342494714588,
+      "recall": 0.1136,
+      "f1": 0.20175230878522377,
+      "fpr_test": 0.012461982375419168,
+      "fpr_target": 0.02,
+      "collapsed": false,
+      "tn": 63316,
+      "fp": 799,
+      "fn": 56508,
+      "tp": 7242
+    },
+    "99": {
+      "threshold": 0.6040376680565169,
+      "accuracy": 0.5331951667774606,
+      "precision": 0.865945945945946,
+      "recall": 0.07538823529411764,
+      "f1": 0.13870129870129871,
+      "fpr_test": 0.011604148795133743,
+      "fpr_target": 0.01,
+      "collapsed": false,
+      "tn": 63371,
+      "fp": 744,
+      "fn": 58944,
+      "tp": 4806
+    },
+    "99.5": {
+      "threshold": 0.6118682279429173,
+      "accuracy": 0.527055879247644,
+      "precision": 0.8479507326396263,
+      "recall": 0.06263529411764705,
+      "f1": 0.11665376356651426,
+      "fpr_test": 0.011167433517897528,
+      "fpr_target": 0.005,
+      "collapsed": false,
+      "tn": 63399,
+      "fp": 716,
+      "fn": 59757,
+      "tp": 3993
+    },
+    "99.9": {
+      "threshold": 0.6241311477195077,
+      "accuracy": 0.5207445352520236,
+      "precision": 0.8396589658965896,
+      "recall": 0.047890196078431375,
+      "f1": 0.09061229335470276,
+      "fpr_test": 0.0090930359510255,
+      "fpr_target": 0.001,
+      "collapsed": false,
+      "tn": 63532,
+      "fp": 583,
+      "fn": 60697,
+      "tp": 3053
+    }
+  },
+  "auc": 0.8516759828310955,
+  "auc_pr": 0.8566430328045522,
+  "subtype_recall": {
+    "DDoS-ACK_Fragmentation": {
+      "n": 4250,
+      "recall_op": 0.0009411764705882353
+    },
+    "DDoS-HTTP_Flood-": {
+      "n": 4250,
+      "recall_op": 0.00023529411764705883
+    },
+    "DDoS-ICMP_Flood": {
+      "n": 4250,
+      "recall_op": 0.0
+    },
+    "DDoS-ICMP_Fragmentation": {
+      "n": 4250,
+      "recall_op": 0.004
+    },
+    "DDoS-PSHACK_Flood": {
+      "n": 4250,
+      "recall_op": 0.0
+    },
+    "DDoS-RSTFINFlood": {
+      "n": 4250,
+      "recall_op": 0.9851764705882353
+    },
+    "DDoS-SYN_Flood": {
+      "n": 4250,
+      "recall_op": 0.0
+    },
+    "DDoS-SlowLoris": {
+      "n": 4250,
+      "recall_op": 0.0009411764705882353
+    },
+    "DDoS-SynonymousIP_Flood": {
+      "n": 4250,
+      "recall_op": 0.0
+    },
+    "DDoS-TCP_Flood": {
+      "n": 4250,
+      "recall_op": 0.0
+    },
+    "DDoS-UDP_Flood": {
+      "n": 4250,
+      "recall_op": 0.0
+    },
+    "DDoS-UDP_Fragmentation": {
+      "n": 4250,
+      "recall_op": 0.1171764705882353
+    },
+    "Mirai-greeth_flood": {
+      "n": 4250,
+      "recall_op": 0.00988235294117647
+    },
+    "Mirai-greip_flood": {
+      "n": 4250,
+      "recall_op": 0.012470588235294117
+    },
+    "Mirai-udpplain": {
+      "n": 4250,
+      "recall_op": 0.0
+    }
+  },
+  "cost": {
+    "n_train": 462154,
+    "n_features": 33,
+    "n_estimators": 200,
+    "max_samples": 1024,
+    "mean_tree_depth": 10.0
+  },
+  "latency_archival": {
+    "mean_ms": 0.052453041076660156,
+    "std_ms": 0.0029180959233290585,
+    "throughput_sps": 19064.671551426338,
+    "note": "archival; measured under parallel load"
+  },
+  "train_time_sec": 1.7872226238250732,
+  "reconstruction_error_summary": {
+    "re_val_normal_n": 115539,
+    "re_val_normal_mean": 0.4278414392850493,
+    "re_val_normal_std": 0.053214790165424304,
+    "re_val_normal_min": 0.34717959929737563,
+    "re_val_normal_p50": 0.42134223513896535,
+    "re_val_normal_p95": 0.520387957856144,
+    "re_val_normal_p99": 0.6040376680565169,
+    "re_val_normal_max": 0.6439142087113858,
+    "re_test_mixed_n": 127865,
+    "re_test_mixed_mean": 0.4796279548257997,
+    "re_test_mixed_std": 0.07926852539100906,
+    "re_test_mixed_min": 0.347022949974859,
+    "re_test_mixed_p50": 0.4678966759363917,
+    "re_test_mixed_p95": 0.6014215023089822,
+    "re_test_mixed_p99": 0.64610820315377,
+    "re_test_mixed_max": 0.6734697550607611,
+    "re_test_normal_n": 64115,
+    "re_test_normal_mean": 0.430683575320342,
+    "re_test_normal_std": 0.054379751205510744,
+    "re_test_normal_min": 0.34703046423393996,
+    "re_test_normal_p50": 0.42515373231554277,
+    "re_test_normal_p95": 0.529018163210047,
+    "re_test_normal_p99": 0.6218420813925486,
+    "re_test_normal_max": 0.6611434049534073,
+    "re_test_attack_n": 63750,
+    "re_test_attack_mean": 0.5288525648962691,
+    "re_test_attack_std": 0.06925733651418704,
+    "re_test_attack_min": 0.347022949974859,
+    "re_test_attack_p50": 0.5523133181010182,
+    "re_test_attack_p95": 0.6208854273014268,
+    "re_test_attack_p99": 0.6484531973398928,
+    "re_test_attack_max": 0.6734697550607611
+  },
+  "dataset": "ciciot2023",
+  "seed_idx": 2,
+  "fold": 5,
+  "n_train_normal": 462154,
+  "n_val_normal": 115539,
+  "n_test": 127865,
+  "n_test_normal": 64115,
+  "n_test_attack": 63750,
+  "wall_seconds": 6.352452516555786,
+  "finished_at": "2026-10-01 16:12:59"
+}

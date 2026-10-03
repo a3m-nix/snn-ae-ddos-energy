@@ -1,0 +1,9 @@
+source_file,normal,attack,attack_ip_pair_seen_in_normal_rate,attack_flow_seen_in_normal_rate,top5_dst_ip_share_approx
+Distance.parquet,249941,0,,,{}
+Flame_Sensor.parquet,70503,0,,,{}
+Soil_Moisture.parquet,249883,0,,,{}
+Sound_Sensor.parquet,249978,0,,,{}
+Water_Level.parquet,249932,0,,,{}
+ddos-icmp-flood-attacks.parquet,0,249986,4.000224012544703e-06,4.000224012544703e-06,"{""192.168.0.128"": 0.7821, ""162.158.94.240"": 0.0, ""75.159.141.5"": 0.0, ""250.173.206.250"": 0.0, ""100.167.106.117"": 0.0}"
+ddos-udp-flood-attacks.parquet,0,249981,0.0,0.0,"{""192.168.0.128"": 0.8884, ""13.43.209.14"": 0.0, ""167.196.126.226"": 0.0, ""26.90.33.239"": 0.0, ""252.128.123.13"": 0.0}"
+phValue.parquet,9654,0,,,{}

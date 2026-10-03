@@ -1,0 +1,63 @@
+{
+  "dataset": "ciciot2023",
+  "unit": "seed 0 / fold 0 (dipilih a priori)",
+  "created_at": "2026-10-01 19:11:39",
+  "versions_server": {
+    "python": "3.10.12",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.5.2",
+    "tensorflow": "2.12.0",
+    "joblib": "1.4.2",
+    "pyarrow": "18.0.0",
+    "brian2": "2.9.0"
+  },
+  "s1_sample_hash": "5eb298671bca391c",
+  "s1_splits_hash": "d03dce37dbba1ae2",
+  "scaler_type": "minmax",
+  "operating_percentile": 99,
+  "n_test": 127864,
+  "n_test_normal": 64114,
+  "n_test_attack": 63750,
+  "score_definition": {
+    "AE": "MSE rekonstruksi pada fitur terskala",
+    "baseline": "-score_samples (lebih tinggi = lebih anomali)"
+  },
+  "input_pipeline": "33 fitur mentah (test_raw.parquet, float64) -> non-finite = 0 -> CAST float32 -> scaler.pkl -> float32 -> model (cast float32 sebelum scaler WAJIB, identik training)",
+  "tflite": {
+    "SNN_AE": {
+      "ok": true,
+      "max_abs_diff_vs_keras": 1.7881393432617188e-07
+    },
+    "Dense_AE": {
+      "ok": true,
+      "max_abs_diff_vs_keras": 0.00390625
+    },
+    "LSTM_AE": {
+      "ok": true,
+      "max_abs_diff_vs_keras": 4.57763671875e-05
+    },
+    "CNN_AE": {
+      "ok": true,
+      "max_abs_diff_vs_keras": 0.00042724609375
+    }
+  },
+  "sha256": {
+    "features.json": "6b0e9e2129f1812b539f46e604c810aaed90de7db63933e16af66cc8e6f0a2ac",
+    "models/CNN_AE.keras": "897f3f4ab3d6dce18dde100438e6dc5c3cce4365a062da07dc70c2d4e289d1d3",
+    "models/CNN_AE.tflite": "8e151d576978cef84113ff528652b165fd9175f3f3d634ad6ed5c290985e3c00",
+    "models/Dense_AE.keras": "89d5d495c4b10a0c21cf6919dc05a12b7aa232ecc3575c1b5bfbe1a215c85b60",
+    "models/Dense_AE.tflite": "14e85c556163a047d72298a29ff9c55577e19fbe0a19932ed02fa849c9ecd058",
+    "models/IF.pkl": "389034f4e343bc34da10588cc70fd205e9fc29c75a4493b3bfec6d5bbe9becc5",
+    "models/LOF.pkl": "77a6e08d74ac3e7ad64a7a745a4a976e6cd9a1d2c2f598229b2d550cb012b55a",
+    "models/LSTM_AE.keras": "5665b9ad9dec8e622eaae17c6e2949ec8b4aad3ef19a8a871856a4458a2be5fa",
+    "models/LSTM_AE.tflite": "26db8841f79dfa222325f4cd0ad66bd0cfe807de3686e3bf77172a0caebc71f6",
+    "models/OCSVM.pkl": "40d204f95a556796c3997ba60cd1b25d749b668ba934031211b89788164f9364",
+    "models/SNN_AE.keras": "db0b0722bcf981894c530ca7c550544658127da93c115ccb1b7c3a80f0eff0bc",
+    "models/SNN_AE.tflite": "06d4ee9f32955854588f9401bea771c6bb584532b86078b468b710943c2347a1",
+    "scaler.pkl": "655935cab3dc7563f462e000b5fc1ba8cb575ac59b60d1a706f55d02f1081d31",
+    "server_reference_scores.npz": "6a8fbaeae08d558d0d0d45e1caa9189d7c6e55664a851278573d5c2c7d1937b5",
+    "test_raw.parquet": "7d5c56ec2fd22f2d7860ce851936791959b1c5c363363310ca92d8aa3abc3c28",
+    "thresholds.json": "cda02812ceca8293a302a4e63bf79420fd217fec85b3a2753f923d1ac5ef1a38"
+  }
+}

@@ -1,0 +1,9 @@
+source_file,label,label_type,packets
+BenignTraffic.parquet,Benign,Benign,233993
+DDoS-HTTP_Flood-.parquet,Attack,DDoS-HTTP_Flood-,247722
+DDoS-ICMP_Fragmentation.parquet,Attack,DDoS-ICMP_Fragmentation,243410
+DDoS-RSTFINFlood.parquet,Attack,DDoS-RSTFINFlood,249851
+DDoS-SynonymousIP_Flood.parquet,Attack,DDoS-SynonymousIP_Flood,249711
+DDoS-UDP_Flood.parquet,Attack,DDoS-UDP_Flood,249822
+Mirai-greeth_flood.parquet,Attack,Mirai-greeth_flood,249363
+Mirai-udpplain.parquet,Attack,Mirai-udpplain,245929
